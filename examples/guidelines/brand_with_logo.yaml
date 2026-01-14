@@ -1,0 +1,37 @@
+source_file: "examples/guidelines/brand_with_logo.yaml"
+
+# Brand colors
+primary_colors:
+  - "#0066FF"  # Electric Blue
+  - "#1A1A1A"  # Midnight Black
+
+secondary_colors:
+  - "#FFFFFF"  # White
+
+# Typography
+primary_font: "Helvetica"
+secondary_font: "Arial"
+brand_voice: "Bold, innovative, customer-focused"
+photography_style: "Clean, modern, minimalist product photography"
+
+# Logo placement settings
+logo_placement: "bottom-right"      # Options: top-left, top-right, bottom-left, bottom-right
+logo_clearspace: 30                 # Pixels from edges (default: 20)
+logo_min_size: 60                   # Minimum logo width in pixels (default: 50)
+logo_max_size: 250                  # Maximum logo width in pixels (default: 200)
+logo_opacity: 1.0                   # Opacity 0.0-1.0 (default: 1.0, fully opaque)
+logo_scale: 0.12                    # Logo size as % of image width (default: 0.15)
+
+# Text overlay customization
+text_color: "#FFFFFF"
+text_shadow: true
+text_shadow_color: "#000000"
+text_background: false
+
+# Prohibited elements
+prohibited_elements:
+  - "cluttered backgrounds"
+  - "low quality images"
+
+approved_taglines:
+  - "Innovation You Can Trust"

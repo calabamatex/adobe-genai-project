@@ -1,0 +1,34 @@
+{
+  "campaign_id": "NO_SHADOW_TEST",
+  "campaign_name": "Text Without Shadow Test",
+  "brand_name": "TechStyle",
+  "target_market": "North America",
+  "target_audience": "General consumers",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Clean Text Design",
+    "subheadline": "No Drop Shadows",
+    "cta": "Shop Now"
+  },
+  "products": [
+    {
+      "product_id": "TEST-NO-SHADOW",
+      "product_name": "Test Product",
+      "product_description": "Testing text overlay without drop shadows",
+      "product_category": "General",
+      "key_features": [
+        "Clean design",
+        "Modern aesthetics"
+      ],
+      "existing_assets": null,
+      "generation_prompt": "modern minimalist product on bright white background, professional studio lighting, clean and simple"
+    }
+  ],
+  "aspect_ratios": ["1:1"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": "examples/guidelines/brand_no_shadow.yaml",
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}

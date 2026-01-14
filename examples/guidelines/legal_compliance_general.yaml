@@ -1,0 +1,94 @@
+source_file: "examples/guidelines/legal_compliance_general.yaml"
+
+# General Legal Compliance Guidelines
+# For standard consumer products and services
+
+# Prohibited Words - Terms that cannot be used in any context
+prohibited_words:
+  - "guarantee"
+  - "guaranteed"
+  - "free"          # Often requires "no purchase necessary" disclaimer
+  - "cure"
+  - "miracle"
+  - "revolutionary"  # Without substantiation
+  - "FDA-approved"   # Unless actually approved
+  - "clinically proven"  # Without clinical studies
+
+# Prohibited Phrases - Complete phrases that are not allowed
+prohibited_phrases:
+  - "guaranteed results"
+  - "100% effective"
+  - "risk-free"
+  - "cure all diseases"
+  - "medical breakthrough"
+  - "no side effects"
+  - "completely safe"
+  - "lose weight fast without diet or exercise"
+
+# Prohibited Claims - Marketing claims that require substantiation
+prohibited_claims:
+  - "scientifically proven" # Without peer-reviewed studies
+  - "doctor recommended"    # Without actual doctor endorsements
+  - "as seen on TV"        # Without proper documentation
+  - "award-winning"        # Without specifying the award
+  - "best in class"        # Without comparative data
+  - "number one seller"    # Without sales verification
+
+# Restricted Terms - Terms that require context or disclaimers
+restricted_terms:
+  "natural":
+    - "100%"           # May need substantiation
+    - "completely"     # May need substantiation
+  "organic":
+    - "certified"      # Requires certification body
+  "new":
+    - "revolutionary"  # Needs substantiation
+  "sale":
+    - "going out of business"  # May require proof
+    - "final"          # May be misleading
+
+# Age Restrictions
+age_restrictions: null  # Set to 18 for alcohol, 21 for certain states, etc.
+
+# Restricted Audiences
+restricted_audiences:
+  - "children under 13"  # COPPA compliance
+
+# Geographic Restrictions (if any)
+restricted_regions: []
+
+# Industry Regulations to Follow
+industry_regulations:
+  - "FTC"        # Federal Trade Commission (Truth in Advertising)
+  - "CAN-SPAM"   # Email marketing regulations
+  - "TCPA"       # Telephone Consumer Protection Act
+
+# Protected Trademarks - Competitor trademarks to avoid
+protected_trademarks:
+  - "Competitor Brand A"
+  - "Competitor Brand B"
+  # Add actual competitor brands here
+
+# Content Standards
+require_substantiation: true      # Claims must be substantiated
+prohibit_superlatives: false      # "Best", "perfect" allowed with substantiation
+
+# Required Disclaimers
+required_disclaimers:
+  general: "Results may vary. Individual results not guaranteed."
+  testimonials: "Testimonials reflect individual experiences and may not represent typical results."
+
+# Locale-Specific Restrictions
+locale_restrictions:
+  "en-US":
+    prohibited_words:
+      - "free" # Requires context
+    require_disclaimers: true
+
+  "en-GB":
+    prohibited_words: []
+    require_disclaimers: true
+
+  "es-MX":
+    prohibited_words: []
+    require_disclaimers: true

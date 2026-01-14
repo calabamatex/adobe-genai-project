@@ -1,0 +1,238 @@
+# Localization Guidelines for TechStyle Multi-Market Campaigns
+source_file: "localization_rules.yaml"
+version: "2.0"
+
+supported_locales:
+  - "en-US"
+  - "es-MX"
+  - "fr-CA"
+  - "pt-BR"
+  - "de-DE"
+  - "ja-JP"
+  - "ko-KR"
+
+# Market-specific rules and preferences
+market_specific_rules:
+  en-US:
+    tone: "casual"
+    formality: "informal"
+    preferred_cta_style: "action-oriented"
+    punctuation: "American English"
+    date_format: "MM/DD/YYYY"
+    currency: "USD"
+  
+  es-MX:
+    tone: "warm"
+    formality: "formal"
+    preferred_cta_style: "inviting"
+    punctuation: "Spanish (Mexico)"
+    date_format: "DD/MM/YYYY"
+    currency: "MXN"
+    use_usted: true
+  
+  fr-CA:
+    tone: "professional"
+    formality: "formal"
+    preferred_cta_style: "polite-imperative"
+    punctuation: "French Canadian"
+    date_format: "YYYY-MM-DD"
+    currency: "CAD"
+    use_vous: true
+  
+  pt-BR:
+    tone: "energetic"
+    formality: "informal"
+    preferred_cta_style: "enthusiastic"
+    punctuation: "Brazilian Portuguese"
+    date_format: "DD/MM/YYYY"
+    currency: "BRL"
+  
+  de-DE:
+    tone: "precise"
+    formality: "formal"
+    preferred_cta_style: "clear-directive"
+    punctuation: "German"
+    date_format: "DD.MM.YYYY"
+    currency: "EUR"
+    use_sie: true
+  
+  ja-JP:
+    tone: "respectful"
+    formality: "formal"
+    preferred_cta_style: "humble-suggestion"
+    punctuation: "Japanese"
+    date_format: "YYYY/MM/DD"
+    currency: "JPY"
+    use_keigo: true
+  
+  ko-KR:
+    tone: "respectful"
+    formality: "formal"
+    preferred_cta_style: "polite-request"
+    punctuation: "Korean"
+    date_format: "YYYY.MM.DD"
+    currency: "KRW"
+    use_jondaemal: true
+
+# Terms to avoid in specific markets
+prohibited_terms:
+  en-US:
+    - "cheap"
+    - "bargain basement"
+    - "discount bin"
+  
+  es-MX:
+    - "barato"
+    - "oferta"
+    - "descuento"
+    - "rebaja"
+  
+  fr-CA:
+    - "bon marché"
+    - "rabais"
+    - "soldé"
+  
+  pt-BR:
+    - "barato"
+    - "liquidação"
+    - "queima de estoque"
+  
+  de-DE:
+    - "billig"
+    - "Ramsch"
+    - "Ausverkauf"
+  
+  ja-JP:
+    - "安い"
+    - "激安"
+    - "処分品"
+  
+  ko-KR:
+    - "싸구려"
+    - "떨이"
+
+# Translation glossary for consistent terminology
+translation_glossary:
+  en-US:
+    product: "product"
+    premium: "premium"
+    quality: "quality"
+    shop_now: "Shop Now"
+    learn_more: "Learn More"
+    buy: "Buy"
+    innovation: "innovation"
+    technology: "technology"
+    experience: "experience"
+  
+  es-MX:
+    product: "producto"
+    premium: "premium"
+    quality: "calidad"
+    shop_now: "Comprar Ahora"
+    learn_more: "Saber Más"
+    buy: "Adquirir"
+    innovation: "innovación"
+    technology: "tecnología"
+    experience: "experiencia"
+  
+  fr-CA:
+    product: "produit"
+    premium: "premium"
+    quality: "qualité"
+    shop_now: "Magasiner"
+    learn_more: "En Savoir Plus"
+    buy: "Acheter"
+    innovation: "innovation"
+    technology: "technologie"
+    experience: "expérience"
+  
+  pt-BR:
+    product: "produto"
+    premium: "premium"
+    quality: "qualidade"
+    shop_now: "Compre Agora"
+    learn_more: "Saiba Mais"
+    buy: "Comprar"
+    innovation: "inovação"
+    technology: "tecnologia"
+    experience: "experiência"
+  
+  de-DE:
+    product: "Produkt"
+    premium: "Premium"
+    quality: "Qualität"
+    shop_now: "Jetzt Kaufen"
+    learn_more: "Mehr Erfahren"
+    buy: "Kaufen"
+    innovation: "Innovation"
+    technology: "Technologie"
+    experience: "Erlebnis"
+  
+  ja-JP:
+    product: "製品"
+    premium: "プレミアム"
+    quality: "品質"
+    shop_now: "今すぐ購入"
+    learn_more: "詳細を見る"
+    buy: "購入する"
+    innovation: "革新"
+    technology: "テクノロジー"
+    experience: "体験"
+  
+  ko-KR:
+    product: "제품"
+    premium: "프리미엄"
+    quality: "품질"
+    shop_now: "지금 구매"
+    learn_more: "자세히 보기"
+    buy: "구매하기"
+    innovation: "혁신"
+    technology: "기술"
+    experience: "경험"
+
+# Tone guidelines per locale
+tone_guidelines:
+  en-US: "Casual and friendly, emphasizing innovation and convenience"
+  es-MX: "Warm and respectful, maintaining formal 'usted' form, emphasizing family and quality"
+  fr-CA: "Professional and courteous, using 'vous' form, emphasizing craftsmanship"
+  pt-BR: "Energetic and enthusiastic, informal 'você' form, emphasizing lifestyle"
+  de-DE: "Precise and professional, formal 'Sie' form, emphasizing engineering and quality"
+  ja-JP: "Respectful and humble, using keigo (polite language), emphasizing harmony and detail"
+  ko-KR: "Respectful and polite, using jondaemal (polite speech), emphasizing innovation and status"
+
+# Cultural considerations
+cultural_considerations:
+  en-US:
+    - "Direct communication appreciated"
+    - "Value independence and self-expression"
+    - "Emphasis on convenience and time-saving"
+  
+  es-MX:
+    - "Family-oriented messaging resonates"
+    - "Respect for tradition while embracing innovation"
+    - "Warm, personal tone preferred"
+  
+  fr-CA:
+    - "Bilingual context (French/English)"
+    - "Appreciation for quality and craftsmanship"
+    - "Environmental consciousness valued"
+  
+  pt-BR:
+    - "Social and community-focused"
+    - "Expressive and emotional appeals work well"
+    - "Mobile-first audience"
+  
+  de-DE:
+    - "Value precision and detailed information"
+    - "Quality and durability emphasized"
+    - "Skeptical of exaggerated claims"
+  
+  ja-JP:
+    - "Indirect communication preferred"
+    - "Group harmony over individualism"
+    - "Attention to detail and aesthetics"
+  
+  ko-KR:
+    - "Status and social standing important"
+    - "Technology adoption leaders"
+    - "Visual appeal highly valued"

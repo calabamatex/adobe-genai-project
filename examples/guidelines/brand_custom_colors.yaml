@@ -1,0 +1,32 @@
+source_file: "examples/guidelines/brand_custom_colors.yaml"
+
+# Brand colors
+primary_colors:
+  - "#0066FF"  # Electric Blue
+  - "#1A1A1A"  # Midnight Black
+
+secondary_colors:
+  - "#00D9C0"  # Cyber Teal
+  - "#FFFFFF"  # White
+
+# Typography
+primary_font: "Helvetica"
+secondary_font: "Arial"
+brand_voice: "Bold, innovative, customer-focused"
+photography_style: "Clean, modern, minimalist product photography"
+
+# Text overlay customization - Use brand colors
+text_color: "#0066FF"           # Electric Blue text (brand primary color)
+text_shadow: true               # Enable shadows for visibility
+text_shadow_color: "#FFFFFF"    # White shadow for contrast on dark backgrounds
+text_background: false          # No background box
+text_background_color: "#000000"
+text_background_opacity: 0.5
+
+# Prohibited elements
+prohibited_elements:
+  - "cluttered backgrounds"
+  - "low quality images"
+
+approved_taglines:
+  - "Innovation You Can Trust"

@@ -1,0 +1,103 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Output directory
+output/
+!output/.gitkeep
+
+# Test coverage
+.coverage
+.pytest_cache/
+htmlcov/
+*.cover
+.hypothesis/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# API Keys (extra safety)
+*_api_key*
+*secret*
+credentials.json
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.orig
+*.rej
+.~lock.*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+site/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Backup files
+*.backup
+*_backup.*
+examples/campaigns/*_2026-*.json
+examples/campaigns/*_2025-*.json

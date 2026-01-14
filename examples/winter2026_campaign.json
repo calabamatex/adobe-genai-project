@@ -1,0 +1,35 @@
+{
+  "campaign_id": "WINTER2026",
+  "campaign_name": "Winter Wonderland Sale",
+  "brand_name": "TechStyle",
+  "target_market": "North America",
+  "target_audience": "General consumers",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Winter Tech Essentials",
+    "subheadline": "Stay Warm with Cool Tech",
+    "cta": "Explore Winter Collection"
+  },
+  "products": [
+    {
+      "product_id": "PRODUCT-001",
+      "product_name": "Premium Product",
+      "product_description": "High-quality product with exceptional features",
+      "product_category": "General",
+      "key_features": [
+        "High quality",
+        "Great value",
+        "Trusted brand"
+      ],
+      "existing_assets": null,
+      "generation_prompt": "professional product photo, modern design, studio lighting"
+    }
+  ],
+  "aspect_ratios": ["1:1", "9:16", "16:9"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": null,
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}

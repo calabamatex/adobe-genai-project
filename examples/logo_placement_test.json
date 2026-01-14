@@ -1,0 +1,37 @@
+{
+  "campaign_id": "LOGO_TEST",
+  "campaign_name": "Logo Placement Test Campaign",
+  "brand_name": "TechStyle",
+  "target_market": "North America",
+  "target_audience": "General consumers",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Premium Innovation",
+    "subheadline": "Discover Excellence",
+    "cta": "Shop Now"
+  },
+  "products": [
+    {
+      "product_id": "LOGO-TEST-001",
+      "product_name": "Premium Product with Logo",
+      "product_description": "High-quality product showcasing brand logo placement",
+      "product_category": "Electronics",
+      "key_features": [
+        "Premium quality",
+        "Modern design",
+        "Brand excellence"
+      ],
+      "existing_assets": {
+        "logo": "examples/assets/logos/techstyle-logo.png"
+      },
+      "generation_prompt": "modern minimalist premium product on clean white background, professional studio lighting, high-end photography"
+    }
+  ],
+  "aspect_ratios": ["1:1", "9:16"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": "examples/guidelines/brand_with_logo.yaml",
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}

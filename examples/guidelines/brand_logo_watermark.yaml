@@ -1,0 +1,25 @@
+source_file: "examples/guidelines/brand_logo_watermark.yaml"
+
+# Brand colors
+primary_colors:
+  - "#0066FF"
+  - "#1A1A1A"
+
+# Typography
+primary_font: "Helvetica"
+brand_voice: "Modern, innovative"
+photography_style: "Dynamic product photography"
+
+# Watermark-style logo (subtle, semi-transparent)
+logo_placement: "top-left"          # Top-left corner watermark
+logo_clearspace: 25
+logo_min_size: 80
+logo_max_size: 150
+logo_opacity: 0.4                   # 40% opacity for subtle watermark effect
+logo_scale: 0.18                    # Slightly larger for visibility at low opacity
+
+# Text overlay
+text_color: "#FFFFFF"
+text_shadow: true
+text_shadow_color: "#000000"
+text_background: false

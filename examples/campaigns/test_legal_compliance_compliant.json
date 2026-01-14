@@ -1,0 +1,43 @@
+{
+  "campaign_id": "LEGAL_TEST_002",
+  "campaign_name": "Legal Compliance Test - Compliant Version",
+  "brand_name": "Test Health Company",
+  "campaign_message": {
+    "headline": "Support Your Wellness Journey",
+    "subheadline": "Natural supplement designed to promote healthy living",
+    "cta": "Try Risk-Free for 30 Days",
+    "locale": "en-US"
+  },
+  "products": [
+    {
+      "product_id": "HEALTH_PRODUCT_002",
+      "product_name": "Daily Wellness Supplement",
+      "product_category": "Health & Wellness",
+      "product_description": "A carefully formulated blend of natural ingredients designed to support overall wellness. Our product follows strict quality standards and is manufactured in a certified facility.",
+      "key_features": [
+        "Contains essential vitamins and minerals",
+        "Made with natural ingredients",
+        "Third-party tested for quality",
+        "Supports healthy lifestyle habits"
+      ],
+      "generation_prompt": "professional supplement bottle on white background",
+      "existing_assets": {
+        "hero": "output/LEGAL_TEST_002/hero/HEALTH_PRODUCT_002_hero.png",
+        "en-US_16:9": "output/LEGAL_TEST_002/en-US/HEALTH_PRODUCT_002/16x9/HEALTH_PRODUCT_002_16x9_en-US.png"
+      }
+    }
+  ],
+  "target_locales": [
+    "en-US"
+  ],
+  "aspect_ratios": [
+    "16:9"
+  ],
+  "output_formats": [
+    "png"
+  ],
+  "brand_guidelines_file": "examples/guidelines/brand_no_shadow.yaml",
+  "legal_compliance_file": "examples/guidelines/legal_compliance_health.yaml",
+  "enable_localization": false,
+  "image_generation_backend": "openai"
+}

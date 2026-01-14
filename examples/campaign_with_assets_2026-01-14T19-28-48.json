@@ -1,0 +1,44 @@
+{
+  "campaign_id": "ASSET-TEST",
+  "campaign_name": "Test Campaign with Existing Assets",
+  "brand_name": "TechStyle",
+  "target_market": "North America",
+  "target_audience": "Tech enthusiasts",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Premium Tech Products",
+    "subheadline": "Quality You Can Trust",
+    "cta": "Shop Now"
+  },
+  "products": [
+    {
+      "product_id": "HEADPHONES-TEST",
+      "product_name": "Premium Wireless Headphones",
+      "product_description": "High-fidelity wireless headphones",
+      "product_category": "Audio Electronics",
+      "key_features": ["Active Noise Cancellation", "40-hour battery"],
+      "existing_assets": {
+        "hero": "input_assets/headphones_hero.png"
+      },
+      "generation_prompt": null
+    },
+    {
+      "product_id": "SMARTWATCH-TEST",
+      "product_name": "Fitness Smartwatch",
+      "product_description": "Advanced fitness tracker",
+      "product_category": "Wearable Technology",
+      "key_features": ["Heart rate monitoring", "GPS"],
+      "existing_assets": {
+        "hero": "input_assets/watch_hero.png"
+      },
+      "generation_prompt": null
+    }
+  ],
+  "aspect_ratios": ["1:1", "9:16"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": null,
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}

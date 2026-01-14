@@ -1,0 +1,133 @@
+source_file: "examples/guidelines/legal_compliance_health.yaml"
+
+# Health & Wellness Legal Compliance Guidelines
+# For supplements, fitness, wellness products
+# VERY STRICT - FDA and FTC regulations
+
+# Prohibited Words
+prohibited_words:
+  - "cure"
+  - "cures"
+  - "curing"
+  - "treat"
+  - "treats"
+  - "treating"
+  - "prevent"
+  - "prevents"
+  - "preventing"
+  - "diagnose"
+  - "therapy"
+  - "healing"
+  - "FDA-approved"  # Unless actually approved
+  - "prescription"  # Unless actually a prescription
+  - "pharmaceutical"
+  - "medicine"
+  - "drug"
+
+# Prohibited Phrases
+prohibited_phrases:
+  - "cure cancer"
+  - "cure diabetes"
+  - "cure heart disease"
+  - "treat medical conditions"
+  - "prevent disease"
+  - "replace medication"
+  - "alternative to prescription drugs"
+  - "medical breakthrough"
+  - "miracle cure"
+  - "doctor approved"
+  - "clinically proven to cure"
+  - "100% safe"
+  - "no side effects"
+  - "lose weight without diet or exercise"
+  - "burn fat fast"
+  - "melt away pounds"
+
+# Prohibited Claims
+prohibited_claims:
+  - "scientifically proven to cure"
+  - "FDA certified"
+  - "medically proven"
+  - "doctor recommended"
+  - "hospital tested"
+  - "guaranteed weight loss"
+  - "lose X pounds in Y days"
+  - "reverse aging"
+  - "boost immunity"  # Without substantiation
+  - "detox your body"
+  - "cleanse toxins"
+
+# Restricted Terms - Require careful use with disclaimers
+restricted_terms:
+  "support":
+    - "cure"
+    - "treat"
+    - "prevent"
+  "help":
+    - "cure"
+    - "treat"
+    - "prevent"
+  "maintain":
+    - "healthy" # OK
+  "promote":
+    - "health"  # OK with substantiation
+
+# Age Restrictions
+age_restrictions: 18  # Many supplements are 18+
+
+# Restricted Audiences
+restricted_audiences:
+  - "children"
+  - "minors under 18"
+  - "pregnant women"  # Without disclaimer
+  - "nursing mothers" # Without disclaimer
+
+# Geographic Restrictions
+restricted_regions: []
+
+# Industry Regulations
+industry_regulations:
+  - "FDA"   # Food and Drug Administration
+  - "FTC"   # Federal Trade Commission
+  - "DSHEA" # Dietary Supplement Health and Education Act
+  - "cGMP"  # Current Good Manufacturing Practice
+
+# Protected Trademarks
+protected_trademarks: []
+
+# Content Standards
+require_substantiation: true      # MUST have substantiation for all claims
+prohibit_superlatives: true       # "Best", "perfect" require strong evidence
+
+# Required Disclaimers
+required_disclaimers:
+  product: "This product is not intended to diagnose, treat, cure, or prevent any disease."
+  results: "Results may vary. Individual results are not guaranteed."
+  medical: "Consult your physician before starting any supplement regimen."
+  fda: "These statements have not been evaluated by the Food and Drug Administration."
+  diet: "As part of a balanced diet and exercise program."
+
+# Locale-Specific Restrictions
+locale_restrictions:
+  "en-US":
+    prohibited_words:
+      - "cure"
+      - "treat"
+      - "prevent"
+    required_disclaimers:
+      - "FDA statement required"
+      - "Medical consultation disclaimer required"
+
+  "en-CA":
+    prohibited_words:
+      - "cure"
+      - "treat"
+    required_disclaimers:
+      - "Health Canada compliance required"
+
+  "en-GB":
+    prohibited_words:
+      - "cure"
+      - "treat"
+    required_disclaimers:
+      - "MHRA compliance required"

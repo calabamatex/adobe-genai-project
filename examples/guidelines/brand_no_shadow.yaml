@@ -1,0 +1,41 @@
+source_file: "examples/guidelines/brand_no_shadow.yaml"
+
+# Brand colors
+primary_colors:
+  - "#0066FF"
+  - "#1A1A1A"
+
+secondary_colors:
+  - "#FFFFFF"
+  - "#F5F5F5"
+
+# Typography
+primary_font: "Helvetica"
+secondary_font: "Arial"
+
+# Brand voice and style
+brand_voice: "Bold, innovative, customer-focused"
+photography_style: "Clean, modern, minimalist product photography with bright backgrounds"
+
+# Logo guidelines
+logo_clearspace: 20
+logo_min_size: 50
+
+# Text overlay settings - Clean design with no shadows
+text_color: "#FFFFFF"              # White text
+text_shadow: false                 # Disable drop shadows
+text_shadow_color: "#000000"       # Not used when shadow disabled
+text_background: false             # No background box
+text_background_color: "#000000"
+text_background_opacity: 0.5
+
+# Prohibited elements
+prohibited_elements:
+  - "cluttered backgrounds"
+  - "low quality images"
+  - "inconsistent branding"
+
+# Approved taglines
+approved_taglines:
+  - "Innovation You Can Trust"
+  - "Quality First"

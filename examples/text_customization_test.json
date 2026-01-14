@@ -1,0 +1,34 @@
+{
+  "campaign_id": "TEXT_CUSTOM_TEST",
+  "campaign_name": "Text Customization Test Campaign",
+  "brand_name": "TechStyle",
+  "target_market": "North America",
+  "target_audience": "General consumers",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Custom Text Colors",
+    "subheadline": "Brand-Aligned Typography",
+    "cta": "Shop Now"
+  },
+  "products": [
+    {
+      "product_id": "TEST-CUSTOM-COLORS",
+      "product_name": "Custom Color Test",
+      "product_description": "Test product with brand-colored text",
+      "product_category": "General",
+      "key_features": [
+        "Brand colors",
+        "Custom styling"
+      ],
+      "existing_assets": null,
+      "generation_prompt": "modern minimalist product on clean white background, professional studio lighting, bright and airy"
+    }
+  ],
+  "aspect_ratios": ["1:1"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": "examples/guidelines/brand_custom_colors.yaml",
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}

@@ -1,0 +1,118 @@
+source_file: "examples/guidelines/legal_compliance_financial.yaml"
+
+# Financial Services Legal Compliance Guidelines
+# For banking, investment, insurance, credit products
+# SEC, FINRA, CFPB regulations
+
+# Prohibited Words
+prohibited_words:
+  - "guarantee"
+  - "guaranteed"
+  - "risk-free"
+  - "no-risk"
+  - "safe investment"
+  - "sure thing"
+  - "can't lose"
+  - "always"
+  - "never"
+
+# Prohibited Phrases
+prohibited_phrases:
+  - "guaranteed returns"
+  - "no risk"
+  - "risk-free investment"
+  - "sure bet"
+  - "get rich quick"
+  - "make money fast"
+  - "passive income guaranteed"
+  - "double your money"
+  - "no credit check required"  # If untrue
+  - "guaranteed approval"
+  - "everyone qualifies"
+  - "bankruptcy OK"  # Needs disclaimer
+  - "bad credit OK"  # Needs disclaimer
+
+# Prohibited Claims
+prohibited_claims:
+  - "past performance guarantees future results"
+  - "no fees"  # If fees exist
+  - "lowest rates guaranteed"
+  - "highest returns"
+  - "beat the market"
+  - "insider information"
+  - "secret trading strategy"
+  - "zero downside risk"
+  - "protected principal"  # Unless actually protected
+
+# Restricted Terms
+restricted_terms:
+  "may":
+    - "guarantee"  # Don't use together
+  "could":
+    - "guarantee"  # Don't use together
+  "typical":
+    - "results"    # Requires substantiation
+  "average":
+    - "returns"    # Requires disclosure
+
+# Age Restrictions
+age_restrictions: 18  # Financial products require 18+
+
+# Restricted Audiences
+restricted_audiences:
+  - "minors"
+  - "children"
+
+# Geographic Restrictions
+restricted_regions: []  # May vary by state/country
+
+# Industry Regulations
+industry_regulations:
+  - "SEC"    # Securities and Exchange Commission
+  - "FINRA"  # Financial Industry Regulatory Authority
+  - "CFPB"   # Consumer Financial Protection Bureau
+  - "FDIC"   # Federal Deposit Insurance Corporation (if applicable)
+  - "Reg Z"  # Truth in Lending
+  - "Reg DD" # Truth in Savings
+  - "CARD Act"  # Credit card regulations
+
+# Protected Trademarks
+protected_trademarks: []
+
+# Content Standards
+require_substantiation: true      # All claims must be substantiated
+prohibit_superlatives: true       # "Best rates" requires verification
+
+# Required Disclaimers
+required_disclaimers:
+  investment: "Past performance does not guarantee future results."
+  risk: "Investing involves risk, including loss of principal."
+  fdic: "Member FDIC. Deposits insured up to $250,000."  # If applicable
+  apr: "APR varies based on creditworthiness. Rates subject to change."
+  credit: "Subject to credit approval. Terms and conditions apply."
+  hypothetical: "Hypothetical examples for illustrative purposes only."
+
+# Locale-Specific Restrictions
+locale_restrictions:
+  "en-US":
+    prohibited_words:
+      - "guarantee"
+      - "risk-free"
+    required_disclaimers:
+      - "Investment risk disclaimer"
+      - "APR disclosure"
+      - "Equal Housing Lender (if applicable)"
+
+  "en-GB":
+    prohibited_words:
+      - "guarantee"
+    required_disclaimers:
+      - "FCA authorization required"
+      - "Risk warnings required"
+
+  "en-CA":
+    prohibited_words:
+      - "guaranteed returns"
+    required_disclaimers:
+      - "IIROC/MFDA compliance"
+      - "CDIC member (if applicable)"

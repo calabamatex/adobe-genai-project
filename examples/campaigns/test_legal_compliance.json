@@ -1,0 +1,33 @@
+{
+  "campaign_id": "LEGAL_TEST_001",
+  "campaign_name": "Legal Compliance Test Campaign",
+  "brand_name": "Test Health Company",
+  "campaign_message": {
+    "headline": "Guaranteed Results - Cure Your Health Problems!",
+    "subheadline": "100% effective miracle solution with no side effects",
+    "cta": "Get Free Trial - FDA-approved treatment",
+    "locale": "en-US"
+  },
+  "products": [
+    {
+      "product_id": "HEALTH_PRODUCT_001",
+      "product_name": "Ultimate Health Supplement",
+      "product_category": "Health & Wellness",
+      "product_description": "Our scientifically proven formula will cure diseases and prevent illness. Doctor recommended with guaranteed weight loss of 20 pounds in 10 days.",
+      "key_features": [
+        "Clinically proven to treat medical conditions",
+        "FDA-approved pharmaceutical-grade medicine",
+        "100% safe with no side effects",
+        "Guaranteed to reverse aging"
+      ],
+      "generation_prompt": "professional supplement bottle on white background"
+    }
+  ],
+  "target_locales": ["en-US"],
+  "aspect_ratios": ["16:9"],
+  "output_formats": ["png"],
+  "brand_guidelines_file": "examples/guidelines/brand_guidelines_comprehensive.yaml",
+  "legal_compliance_file": "examples/guidelines/legal_compliance_health.yaml",
+  "enable_localization": false,
+  "image_generation_backend": "openai"
+}

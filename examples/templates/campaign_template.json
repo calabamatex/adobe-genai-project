@@ -1,0 +1,35 @@
+{
+  "campaign_id": "{{CAMPAIGN_ID}}",
+  "campaign_name": "{{CAMPAIGN_NAME}}",
+  "brand_name": "{{BRAND_NAME}}",
+  "target_market": "{{TARGET_MARKET}}",
+  "target_audience": "{{TARGET_AUDIENCE}}",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "{{HEADLINE}}",
+    "subheadline": "{{SUBHEADLINE}}",
+    "cta": "{{CTA}}"
+  },
+  "products": [
+    {
+      "product_id": "{{PRODUCT_ID}}",
+      "product_name": "{{PRODUCT_NAME}}",
+      "product_description": "{{PRODUCT_DESCRIPTION}}",
+      "product_category": "{{PRODUCT_CATEGORY}}",
+      "key_features": [
+        "{{FEATURE_1}}",
+        "{{FEATURE_2}}",
+        "{{FEATURE_3}}"
+      ],
+      "existing_assets": null,
+      "generation_prompt": "{{GENERATION_PROMPT}}"
+    }
+  ],
+  "aspect_ratios": ["1:1", "9:16", "16:9"],
+  "output_formats": ["png"],
+  "image_generation_backend": "openai",
+  "brand_guidelines_file": null,
+  "localization_guidelines_file": null,
+  "enable_localization": false,
+  "target_locales": ["en-US"]
+}
