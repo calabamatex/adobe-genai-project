@@ -33,16 +33,16 @@ class StorageManager:
         """Generate path for campaign asset."""
         # Normalize aspect ratio for directory name
         ratio_dir = aspect_ratio.replace(":", "x")
-        
-        # Structure: campaign_id/locale/product_id/ratio/filename
+
+        # Structure: product_id/campaign_id/locale/ratio/filename
         path = (
-            self.output_dir / campaign_id / locale / 
-            product_id / ratio_dir / f"{product_id}_{ratio_dir}_{locale}.{format}"
+            self.output_dir / product_id / campaign_id / locale /
+            ratio_dir / f"{product_id}_{ratio_dir}_{locale}.{format}"
         )
-        
+
         # Create directories
         path.parent.mkdir(parents=True, exist_ok=True)
-        
+
         return path
     
     def save_image(self, image: Image.Image, path: Path) -> None:
@@ -51,8 +51,8 @@ class StorageManager:
         image.save(path, optimize=True, quality=95)
     
     def save_report(self, campaign_output: CampaignOutput, campaign_id: str) -> Path:
-        """Save campaign report JSON."""
-        report_path = self.output_dir / campaign_id / "campaign_report.json"
+        """Save campaign report JSON at root level with campaign_id in filename."""
+        report_path = self.output_dir / f"{campaign_id}_campaign_report.json"
         report_path.parent.mkdir(parents=True, exist_ok=True)
 
         with open(report_path, 'w') as f:

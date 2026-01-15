@@ -219,10 +219,12 @@
 
 **Directory Structure:**
 ```
-output/{campaign_id}/
-├── hero/{product_id}_hero.png
-├── {locale}/{product_id}/{ratio}/asset.png
-└── campaign_report.json
+output/
+├── {product_id}/
+│   └── {campaign_id}/
+│       ├── hero/{product_id}_hero.png
+│       └── {locale}/{ratio}/asset.png
+└── {campaign_id}_campaign_report.json
 ```
 
 ---

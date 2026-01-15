@@ -206,7 +206,7 @@ class CreativeAutomationPipeline:
                     print(f"  ✓ Hero image generated")
 
                     # Save generated hero image for future reuse
-                    hero_dir = self.storage.output_dir / brief.campaign_id / "hero"
+                    hero_dir = self.storage.output_dir / product.product_id / brief.campaign_id / "hero"
                     hero_dir.mkdir(parents=True, exist_ok=True)
                     hero_image_path = str(hero_dir / f"{product.product_id}_hero.png")
 

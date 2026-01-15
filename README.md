@@ -134,7 +134,7 @@ ADOBE_CLIENT_SECRET=your-client-secret
 ./run_cli.sh examples/campaign_brief.json
 ```
 
-That's it! Your assets will be generated in `output/[CAMPAIGN_ID]/`
+That's it! Your assets will be generated in `output/[PRODUCT_ID]/[CAMPAIGN_ID]/`
 
 ---
 
