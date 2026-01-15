@@ -148,6 +148,8 @@ That's it! Your assets will be generated in `output/[CAMPAIGN_ID]/`
 - **[PACKAGES.md](docs/PACKAGES.md)** - Code package summaries
 
 ### Feature Guides
+- **[BRAND_GUIDELINES.md](docs/BRAND_GUIDELINES.md)** - Complete brand guidelines system
+- **[LOCALIZATION.md](docs/LOCALIZATION.md)** - AI-powered localization guide
 - **[TEXT_CUSTOMIZATION.md](docs/TEXT_CUSTOMIZATION.md)** - Text colors, shadows, backgrounds
 - **[LOGO_PLACEMENT.md](docs/LOGO_PLACEMENT.md)** - Logo overlay configuration
 - **[LEGAL_COMPLIANCE.md](examples/guidelines/LEGAL_COMPLIANCE.md)** - Legal checking system
