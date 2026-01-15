@@ -282,15 +282,18 @@ LegalComplianceGuidelines
 **Directory Structure:**
 ```
 output/
-└── {campaign_id}/
-    ├── hero/
-    │   └── {product_id}_hero.png
-    ├── {locale}/
-    │   └── {product_id}/
-    │       ├── 1x1/
-    │       ├── 16x9/
-    │       └── 9x16/
-    └── campaign_report.json
+└── {product_id}/
+    └── {campaign_id}/
+        ├── hero/
+        │   └── {product_id}_hero.png
+        ├── {locale}/
+        │   ├── 1x1/
+        │   │   └── {product_id}_1x1_{locale}.png
+        │   ├── 16x9/
+        │   │   └── {product_id}_16x9_{locale}.png
+        │   └── 9x16/
+        │       └── {product_id}_9x16_{locale}.png
+        └── {product_id}_campaign_report.json
 ```
 
 ---

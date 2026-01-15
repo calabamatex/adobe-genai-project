@@ -50,9 +50,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-01-15
+
+### Changed
+- 🔄 **BREAKING**: Reorganized output directory structure from Campaign → Locale → Product to Product → Campaign → Locale
+- 📊 Split campaign reports per product instead of single combined report
+- 🚀 Enhanced `run_cli.sh` with command-line arguments for brief and backend selection
+
+### Added
+- 📋 New premium tech campaign example (`premium_tech_campaign.json`)
+  - Elite Wireless Earbuds Pro
+  - UltraView Portable 4K Monitor
+  - 5 global locales (US, Mexico, France, Germany, Japan)
+- 🎨 Command-line arguments for `run_cli.sh`:
+  - Positional arguments: `[BRIEF_FILE] [BACKEND]`
+  - `--help` flag with usage examples
+  - File existence validation
+  - Default values support
+- 📚 Enhanced documentation with new examples
+
+### Fixed
+- Removed spurious campaign directory creation at root level
+- Each product now gets its own campaign report co-located with assets
+
+### Directory Structure
+**Old:**
+```
+output/
+└── CAMPAIGN_ID/
+    ├── hero/
+    ├── locale/product_id/ratio/
+    └── campaign_report.json
+```
+
+**New:**
+```
+output/
+└── PRODUCT_ID/
+    └── CAMPAIGN_ID/
+        ├── hero/
+        ├── locale/ratio/
+        └── PRODUCT_ID_campaign_report.json
+```
+
+### Benefits
+- Easier product-centric asset management
+- Clean multi-product campaign organization
+- Per-product reports for better tracking
+- Simplified asset sharing per product
+
+---
+
 ## [Unreleased]
 
-### Planned for 1.1.0
+### Planned for 1.2.0
 - [ ] Video generation support
 - [ ] Web UI for campaign preview
 - [ ] A/B testing variants
@@ -60,7 +111,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] Batch processing
 - [ ] API server with REST endpoints
 
-### Planned for 1.2.0
+### Planned for 1.3.0
 - [ ] Cloud storage integration (S3, Azure Blob)
 - [ ] CDN integration
 - [ ] Performance analytics dashboard

@@ -197,7 +197,34 @@ adobe-genai-project/
 
 ## 🎯 Examples
 
-### Example 1: Multi-Locale Campaign
+### Example 1: Premium Tech Campaign (NEW!)
+
+Generate assets for premium earbuds and portable monitor across 5 global markets:
+
+```bash
+./run_cli.sh examples/premium_tech_campaign.json firefly
+```
+
+**Output:**
+- 2 premium products (Elite Wireless Earbuds Pro, UltraView 4K Monitor)
+- 5 locales (US, Mexico, France, Germany, Japan)
+- 3 aspect ratios per product
+- **30 total assets** + 2 hero images + 2 per-product reports
+
+**Directory Structure:**
+```
+output/
+├── EARBUDS-001/
+│   └── PREMIUM2026/
+│       ├── hero/EARBUDS-001_hero.png
+│       ├── en-US/, es-MX/, fr-FR/, de-DE/, ja-JP/
+│       └── EARBUDS-001_campaign_report.json
+└── MONITOR-001/
+    └── PREMIUM2026/
+        └── ...
+```
+
+### Example 2: Multi-Locale Campaign
 
 Generate assets for US, Mexico, and France:
 
@@ -210,7 +237,22 @@ Generate assets for US, Mexico, and France:
 - Culturally-adapted messaging per locale
 - Brand-consistent visuals across all markets
 
-### Example 2: Health Product with Legal Compliance
+### Example 3: Specify Backend
+
+Run with different image generation backends:
+
+```bash
+# Use Adobe Firefly (commercial-safe, high quality)
+./run_cli.sh examples/campaign_brief.json firefly
+
+# Use OpenAI DALL-E 3 (creative, high quality)
+./run_cli.sh examples/campaign_brief.json openai
+
+# Use Google Gemini Imagen 4 (fast, high quality)
+./run_cli.sh examples/campaign_brief.json gemini
+```
+
+### Example 4: Health Product with Legal Compliance
 
 Generate FDA-compliant health product assets:
 
@@ -224,7 +266,7 @@ Generate FDA-compliant health product assets:
 - Requires FDA disclaimers
 - Ensures regulatory compliance
 
-### Example 3: Asset Reuse for Cost Savings
+### Example 5: Asset Reuse for Cost Savings
 
 Reuse existing hero images, generate only new formats:
 

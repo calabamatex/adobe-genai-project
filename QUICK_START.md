@@ -102,24 +102,35 @@ Target Locales: en-US, es-MX
 
 ```bash
 # View output directory
-ls -R output/SUMMER2026/
+ls -R output/
 
 # Example structure:
-output/SUMMER2026/
-├── hero/
-│   ├── HEADPHONES-001_hero.png
-│   └── SMARTWATCH-002_hero.png
-├── en-US/
-│   ├── HEADPHONES-001/
-│   │   ├── 1x1/HEADPHONES-001_1x1_en-US.png
-│   │   ├── 16x9/HEADPHONES-001_16x9_en-US.png
-│   │   └── 9:16/HEADPHONES-001_9x16_en-US.png
-│   └── SMARTWATCH-002/
-│       └── ...
-├── es-MX/
-│   └── ...
-└── campaign_report.json
+output/
+├── HEADPHONES-001/
+│   └── SUMMER2026/
+│       ├── hero/
+│       │   └── HEADPHONES-001_hero.png
+│       ├── en-US/
+│       │   ├── 1x1/HEADPHONES-001_1x1_en-US.png
+│       │   ├── 16x9/HEADPHONES-001_16x9_en-US.png
+│       │   └── 9x16/HEADPHONES-001_9x16_en-US.png
+│       ├── es-MX/
+│       │   └── ...
+│       └── HEADPHONES-001_campaign_report.json
+└── SMARTWATCH-002/
+    └── SUMMER2026/
+        ├── hero/
+        │   └── SMARTWATCH-002_hero.png
+        ├── en-US/
+        │   └── ...
+        └── SMARTWATCH-002_campaign_report.json
 ```
+
+**New Structure Benefits:**
+- Each product has its own folder
+- Easy to share all campaigns for a specific product
+- Per-product campaign reports
+- Clean organization for multi-product campaigns
 
 ---
 
@@ -166,14 +177,22 @@ nano my_brand.yaml
 ### Try Different Backends
 
 ```bash
-# OpenAI DALL-E 3
-./run_cli.sh campaign.json --backend openai
+# Use default backend (gemini)
+./run_cli.sh examples/campaign_brief.json
 
-# Google Gemini
-./run_cli.sh campaign.json --backend gemini
+# Specify backend as second argument:
 
-# Adobe Firefly
-./run_cli.sh campaign.json --backend firefly
+# Adobe Firefly (commercial-safe, high quality)
+./run_cli.sh examples/campaign_brief.json firefly
+
+# OpenAI DALL-E 3 (creative, high quality)
+./run_cli.sh examples/campaign_brief.json openai
+
+# Google Gemini Imagen 4 (fast, high quality)
+./run_cli.sh examples/campaign_brief.json gemini
+
+# Show all options
+./run_cli.sh --help
 ```
 
 ---
