@@ -26,22 +26,6 @@
       ],
       "generation_prompt": "professional product photo of premium wireless earbuds in charging case, sleek metallic finish, studio lighting, luxury tech aesthetic, black background",
       "existing_assets": {
-        "hero": "output/EARBUDS-001/PREMIUM2026/hero/EARBUDS-001_hero.png",
-        "en-US_1:1": "output/EARBUDS-001/PREMIUM2026/en-US/1x1/EARBUDS-001_1x1_en-US.png",
-        "en-US_9:16": "output/EARBUDS-001/PREMIUM2026/en-US/9x16/EARBUDS-001_9x16_en-US.png",
-        "en-US_16:9": "output/EARBUDS-001/PREMIUM2026/en-US/16x9/EARBUDS-001_16x9_en-US.png",
-        "es-MX_1:1": "output/EARBUDS-001/PREMIUM2026/es-MX/1x1/EARBUDS-001_1x1_es-MX.png",
-        "es-MX_9:16": "output/EARBUDS-001/PREMIUM2026/es-MX/9x16/EARBUDS-001_9x16_es-MX.png",
-        "es-MX_16:9": "output/EARBUDS-001/PREMIUM2026/es-MX/16x9/EARBUDS-001_16x9_es-MX.png",
-        "fr-FR_1:1": "output/EARBUDS-001/PREMIUM2026/fr-FR/1x1/EARBUDS-001_1x1_fr-FR.png",
-        "fr-FR_9:16": "output/EARBUDS-001/PREMIUM2026/fr-FR/9x16/EARBUDS-001_9x16_fr-FR.png",
-        "fr-FR_16:9": "output/EARBUDS-001/PREMIUM2026/fr-FR/16x9/EARBUDS-001_16x9_fr-FR.png",
-        "de-DE_1:1": "output/EARBUDS-001/PREMIUM2026/de-DE/1x1/EARBUDS-001_1x1_de-DE.png",
-        "de-DE_9:16": "output/EARBUDS-001/PREMIUM2026/de-DE/9x16/EARBUDS-001_9x16_de-DE.png",
-        "de-DE_16:9": "output/EARBUDS-001/PREMIUM2026/de-DE/16x9/EARBUDS-001_16x9_de-DE.png",
-        "ja-JP_1:1": "output/EARBUDS-001/PREMIUM2026/ja-JP/1x1/EARBUDS-001_1x1_ja-JP.png",
-        "ja-JP_9:16": "output/EARBUDS-001/PREMIUM2026/ja-JP/9x16/EARBUDS-001_9x16_ja-JP.png",
-        "ja-JP_16:9": "output/EARBUDS-001/PREMIUM2026/ja-JP/16x9/EARBUDS-001_16x9_ja-JP.png"
       }
     },
     {
@@ -59,22 +43,6 @@
       ],
       "generation_prompt": "professional product photo of sleek portable monitor displaying vivid content, ultra-thin bezel, modern design, premium materials, dramatic studio lighting",
       "existing_assets": {
-        "hero": "output/MONITOR-001/PREMIUM2026/hero/MONITOR-001_hero.png",
-        "en-US_1:1": "output/MONITOR-001/PREMIUM2026/en-US/1x1/MONITOR-001_1x1_en-US.png",
-        "en-US_9:16": "output/MONITOR-001/PREMIUM2026/en-US/9x16/MONITOR-001_9x16_en-US.png",
-        "en-US_16:9": "output/MONITOR-001/PREMIUM2026/en-US/16x9/MONITOR-001_16x9_en-US.png",
-        "es-MX_1:1": "output/MONITOR-001/PREMIUM2026/es-MX/1x1/MONITOR-001_1x1_es-MX.png",
-        "es-MX_9:16": "output/MONITOR-001/PREMIUM2026/es-MX/9x16/MONITOR-001_9x16_es-MX.png",
-        "es-MX_16:9": "output/MONITOR-001/PREMIUM2026/es-MX/16x9/MONITOR-001_16x9_es-MX.png",
-        "fr-FR_1:1": "output/MONITOR-001/PREMIUM2026/fr-FR/1x1/MONITOR-001_1x1_fr-FR.png",
-        "fr-FR_9:16": "output/MONITOR-001/PREMIUM2026/fr-FR/9x16/MONITOR-001_9x16_fr-FR.png",
-        "fr-FR_16:9": "output/MONITOR-001/PREMIUM2026/fr-FR/16x9/MONITOR-001_16x9_fr-FR.png",
-        "de-DE_1:1": "output/MONITOR-001/PREMIUM2026/de-DE/1x1/MONITOR-001_1x1_de-DE.png",
-        "de-DE_9:16": "output/MONITOR-001/PREMIUM2026/de-DE/9x16/MONITOR-001_9x16_de-DE.png",
-        "de-DE_16:9": "output/MONITOR-001/PREMIUM2026/de-DE/16x9/MONITOR-001_16x9_de-DE.png",
-        "ja-JP_1:1": "output/MONITOR-001/PREMIUM2026/ja-JP/1x1/MONITOR-001_1x1_ja-JP.png",
-        "ja-JP_9:16": "output/MONITOR-001/PREMIUM2026/ja-JP/9x16/MONITOR-001_9x16_ja-JP.png",
-        "ja-JP_16:9": "output/MONITOR-001/PREMIUM2026/ja-JP/16x9/MONITOR-001_16x9_ja-JP.png"
       }
     }
   ],

@@ -23,16 +23,6 @@
         "Comfortable over-ear design"
       ],
       "existing_assets": {
-        "en-US_1:1": "output/SUMMER2026/en-US/HEADPHONES-001/1x1/HEADPHONES-001_1x1_en-US.png",
-        "en-US_9:16": "output/SUMMER2026/en-US/HEADPHONES-001/9x16/HEADPHONES-001_9x16_en-US.png",
-        "en-US_16:9": "output/SUMMER2026/en-US/HEADPHONES-001/16x9/HEADPHONES-001_16x9_en-US.png",
-        "es-MX_1:1": "output/SUMMER2026/es-MX/HEADPHONES-001/1x1/HEADPHONES-001_1x1_es-MX.png",
-        "es-MX_9:16": "output/SUMMER2026/es-MX/HEADPHONES-001/9x16/HEADPHONES-001_9x16_es-MX.png",
-        "es-MX_16:9": "output/SUMMER2026/es-MX/HEADPHONES-001/16x9/HEADPHONES-001_16x9_es-MX.png",
-        "fr-CA_1:1": "output/SUMMER2026/fr-CA/HEADPHONES-001/1x1/HEADPHONES-001_1x1_fr-CA.png",
-        "fr-CA_9:16": "output/SUMMER2026/fr-CA/HEADPHONES-001/9x16/HEADPHONES-001_9x16_fr-CA.png",
-        "fr-CA_16:9": "output/SUMMER2026/fr-CA/HEADPHONES-001/16x9/HEADPHONES-001_16x9_fr-CA.png",
-        "hero": "output/SUMMER2026/hero/HEADPHONES-001_hero.png"
       },
       "generation_prompt": "professional product photo of premium wireless headphones, sleek modern design, black matte finish, studio lighting"
     },
@@ -48,16 +38,6 @@
         "7-day battery life"
       ],
       "existing_assets": {
-        "en-US_1:1": "output/SUMMER2026/en-US/SMARTWATCH-002/1x1/SMARTWATCH-002_1x1_en-US.png",
-        "en-US_9:16": "output/SUMMER2026/en-US/SMARTWATCH-002/9x16/SMARTWATCH-002_9x16_en-US.png",
-        "en-US_16:9": "output/SUMMER2026/en-US/SMARTWATCH-002/16x9/SMARTWATCH-002_16x9_en-US.png",
-        "es-MX_1:1": "output/SUMMER2026/es-MX/SMARTWATCH-002/1x1/SMARTWATCH-002_1x1_es-MX.png",
-        "es-MX_9:16": "output/SUMMER2026/es-MX/SMARTWATCH-002/9x16/SMARTWATCH-002_9x16_es-MX.png",
-        "es-MX_16:9": "output/SUMMER2026/es-MX/SMARTWATCH-002/16x9/SMARTWATCH-002_16x9_es-MX.png",
-        "fr-CA_1:1": "output/SUMMER2026/fr-CA/SMARTWATCH-002/1x1/SMARTWATCH-002_1x1_fr-CA.png",
-        "fr-CA_9:16": "output/SUMMER2026/fr-CA/SMARTWATCH-002/9x16/SMARTWATCH-002_9x16_fr-CA.png",
-        "fr-CA_16:9": "output/SUMMER2026/fr-CA/SMARTWATCH-002/16x9/SMARTWATCH-002_16x9_fr-CA.png",
-        "hero": "output/SUMMER2026/hero/SMARTWATCH-002_hero.png"
       },
       "generation_prompt": "professional product photo of sleek fitness smartwatch, modern design, black and silver, lifestyle composition"
     }
