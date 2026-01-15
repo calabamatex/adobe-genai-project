@@ -50,13 +50,34 @@ class StorageManager:
         path.parent.mkdir(parents=True, exist_ok=True)
         image.save(path, optimize=True, quality=95)
     
-    def save_report(self, campaign_output: CampaignOutput, campaign_id: str) -> Path:
-        """Save campaign report JSON at root level with campaign_id in filename."""
-        report_path = self.output_dir / f"{campaign_id}_campaign_report.json"
+    def save_report(
+        self,
+        campaign_output: CampaignOutput,
+        campaign_id: str,
+        product_id: str
+    ) -> Path:
+        """Save per-product campaign report JSON."""
+        report_path = (
+            self.output_dir / product_id / campaign_id /
+            f"{product_id}_campaign_report.json"
+        )
         report_path.parent.mkdir(parents=True, exist_ok=True)
 
+        # Filter assets for this product only
+        product_assets = [
+            asset for asset in campaign_output.generated_assets
+            if asset.product_id == product_id
+        ]
+
+        # Create product-specific output
+        product_output = campaign_output.model_copy(update={
+            "generated_assets": product_assets,
+            "total_assets": len(product_assets),
+            "products_processed": [product_id]
+        })
+
         with open(report_path, 'w') as f:
-            json.dump(campaign_output.model_dump(), f, indent=2, default=str)
+            json.dump(product_output.model_dump(), f, indent=2, default=str)
 
         return report_path
 

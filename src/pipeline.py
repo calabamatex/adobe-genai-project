@@ -85,8 +85,7 @@ class CreativeAutomationPipeline:
         print(f"Products: {len(brief.products)}")
         print(f"Target Locales: {', '.join(brief.target_locales)}")
 
-        # Create output directory
-        self.storage.create_campaign_directory(brief.campaign_id)
+        # Note: Output directories created automatically when assets are saved
         
         # Load external guidelines
         brand_guidelines = None
@@ -354,9 +353,17 @@ class CreativeAutomationPipeline:
             errors=errors,
             generation_timestamp=datetime.now()
         )
-        
-        # Save report
-        report_path = self.storage.save_report(output, brief.campaign_id)
+
+        # Save per-product reports
+        report_paths = []
+        for product in brief.products:
+            report_path = self.storage.save_report(
+                output,
+                brief.campaign_id,
+                product.product_id
+            )
+            report_paths.append(report_path)
+            print(f"   📄 Report saved: {report_path}")
 
         # Update original brief with generated asset paths
         if brief_path:
@@ -370,6 +377,6 @@ class CreativeAutomationPipeline:
         print(f"   Total assets generated: {len(generated_assets)}")
         print(f"   Processing time: {elapsed_time:.1f} seconds")
         print(f"   Success rate: {success_rate * 100:.1f}%")
-        print(f"   Report saved: {report_path}")
+        print(f"   Reports saved: {len(report_paths)} product reports")
 
         return output

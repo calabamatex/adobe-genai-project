@@ -220,11 +220,14 @@
 **Directory Structure:**
 ```
 output/
-├── {product_id}/
-│   └── {campaign_id}/
-│       ├── hero/{product_id}_hero.png
-│       └── {locale}/{ratio}/asset.png
-└── {campaign_id}_campaign_report.json
+└── {product_id}/
+    └── {campaign_id}/
+        ├── hero/
+        │   └── {product_id}_hero.png
+        ├── {locale}/
+        │   └── {ratio}/
+        │       └── {product_id}_{ratio}_{locale}.{format}
+        └── {product_id}_campaign_report.json
 ```
 
 ---

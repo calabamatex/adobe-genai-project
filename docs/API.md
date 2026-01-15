@@ -181,10 +181,7 @@ from src.storage import StorageManager
 
 storage = StorageManager(output_dir="output")
 
-# Create campaign directory
-storage.create_campaign_directory("CAMPAIGN-001")
-
-# Get asset path
+# Get asset path (directories created automatically)
 path = storage.get_asset_path(
     campaign_id="CAMPAIGN-001",
     locale="en-US",
@@ -196,8 +193,12 @@ path = storage.get_asset_path(
 # Save image
 storage.save_image(image, path)
 
-# Save report
-report_path = storage.save_report(output, "CAMPAIGN-001")
+# Save per-product report
+report_path = storage.save_report(
+    campaign_output=output,
+    campaign_id="CAMPAIGN-001",
+    product_id="PROD-001"
+)
 
 # Backup brief
 backup_path = storage.backup_campaign_brief("campaign.json")
