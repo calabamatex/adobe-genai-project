@@ -1,0 +1,100 @@
+{
+  "campaign_id": "PREMIUM2026",
+  "campaign_name": "Premium Tech Experience 2026",
+  "brand_name": "TechStyle Elite",
+  "target_market": "Global",
+  "target_audience": "Tech professionals and audiophiles aged 30-50 seeking premium quality",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Experience Excellence in Every Detail",
+    "subheadline": "Premium Audio and Visual Technology for Professionals",
+    "cta": "Discover More"
+  },
+  "products": [
+    {
+      "product_id": "EARBUDS-001",
+      "product_name": "Elite Wireless Earbuds Pro",
+      "product_description": "Premium true wireless earbuds with adaptive noise cancellation, spatial audio, and 8-hour battery life per charge. Crystal-clear highs and deep, powerful bass in an ultra-compact design.",
+      "product_category": "Premium Audio",
+      "key_features": [
+        "Adaptive Noise Cancellation",
+        "Spatial Audio with head tracking",
+        "8 hours battery (32 hours with case)",
+        "Premium sound drivers",
+        "Water and sweat resistant IPX4",
+        "Touch controls"
+      ],
+      "generation_prompt": "professional product photo of premium wireless earbuds in charging case, sleek metallic finish, studio lighting, luxury tech aesthetic, black background",
+      "existing_assets": {
+        "hero": "output/EARBUDS-001/PREMIUM2026/hero/EARBUDS-001_hero.png",
+        "en-US_1:1": "output/EARBUDS-001/PREMIUM2026/en-US/1x1/EARBUDS-001_1x1_en-US.png",
+        "en-US_9:16": "output/EARBUDS-001/PREMIUM2026/en-US/9x16/EARBUDS-001_9x16_en-US.png",
+        "en-US_16:9": "output/EARBUDS-001/PREMIUM2026/en-US/16x9/EARBUDS-001_16x9_en-US.png",
+        "es-MX_1:1": "output/EARBUDS-001/PREMIUM2026/es-MX/1x1/EARBUDS-001_1x1_es-MX.png",
+        "es-MX_9:16": "output/EARBUDS-001/PREMIUM2026/es-MX/9x16/EARBUDS-001_9x16_es-MX.png",
+        "es-MX_16:9": "output/EARBUDS-001/PREMIUM2026/es-MX/16x9/EARBUDS-001_16x9_es-MX.png",
+        "fr-FR_1:1": "output/EARBUDS-001/PREMIUM2026/fr-FR/1x1/EARBUDS-001_1x1_fr-FR.png",
+        "fr-FR_9:16": "output/EARBUDS-001/PREMIUM2026/fr-FR/9x16/EARBUDS-001_9x16_fr-FR.png",
+        "fr-FR_16:9": "output/EARBUDS-001/PREMIUM2026/fr-FR/16x9/EARBUDS-001_16x9_fr-FR.png",
+        "de-DE_1:1": "output/EARBUDS-001/PREMIUM2026/de-DE/1x1/EARBUDS-001_1x1_de-DE.png",
+        "de-DE_9:16": "output/EARBUDS-001/PREMIUM2026/de-DE/9x16/EARBUDS-001_9x16_de-DE.png",
+        "de-DE_16:9": "output/EARBUDS-001/PREMIUM2026/de-DE/16x9/EARBUDS-001_16x9_de-DE.png",
+        "ja-JP_1:1": "output/EARBUDS-001/PREMIUM2026/ja-JP/1x1/EARBUDS-001_1x1_ja-JP.png",
+        "ja-JP_9:16": "output/EARBUDS-001/PREMIUM2026/ja-JP/9x16/EARBUDS-001_9x16_ja-JP.png",
+        "ja-JP_16:9": "output/EARBUDS-001/PREMIUM2026/ja-JP/16x9/EARBUDS-001_16x9_ja-JP.png"
+      }
+    },
+    {
+      "product_id": "MONITOR-001",
+      "product_name": "UltraView Portable 4K Monitor",
+      "product_description": "Professional-grade 15.6-inch 4K OLED portable monitor with USB-C connectivity, HDR support, and ultra-slim design. Perfect for professionals on the go.",
+      "product_category": "Display Technology",
+      "key_features": [
+        "15.6-inch 4K OLED display",
+        "HDR10 support",
+        "USB-C single cable connection",
+        "Ultra-slim 5mm design",
+        "Auto-rotation and touch support",
+        "Built-in speakers"
+      ],
+      "generation_prompt": "professional product photo of sleek portable monitor displaying vivid content, ultra-thin bezel, modern design, premium materials, dramatic studio lighting",
+      "existing_assets": {
+        "hero": "output/MONITOR-001/PREMIUM2026/hero/MONITOR-001_hero.png",
+        "en-US_1:1": "output/MONITOR-001/PREMIUM2026/en-US/1x1/MONITOR-001_1x1_en-US.png",
+        "en-US_9:16": "output/MONITOR-001/PREMIUM2026/en-US/9x16/MONITOR-001_9x16_en-US.png",
+        "en-US_16:9": "output/MONITOR-001/PREMIUM2026/en-US/16x9/MONITOR-001_16x9_en-US.png",
+        "es-MX_1:1": "output/MONITOR-001/PREMIUM2026/es-MX/1x1/MONITOR-001_1x1_es-MX.png",
+        "es-MX_9:16": "output/MONITOR-001/PREMIUM2026/es-MX/9x16/MONITOR-001_9x16_es-MX.png",
+        "es-MX_16:9": "output/MONITOR-001/PREMIUM2026/es-MX/16x9/MONITOR-001_16x9_es-MX.png",
+        "fr-FR_1:1": "output/MONITOR-001/PREMIUM2026/fr-FR/1x1/MONITOR-001_1x1_fr-FR.png",
+        "fr-FR_9:16": "output/MONITOR-001/PREMIUM2026/fr-FR/9x16/MONITOR-001_9x16_fr-FR.png",
+        "fr-FR_16:9": "output/MONITOR-001/PREMIUM2026/fr-FR/16x9/MONITOR-001_16x9_fr-FR.png",
+        "de-DE_1:1": "output/MONITOR-001/PREMIUM2026/de-DE/1x1/MONITOR-001_1x1_de-DE.png",
+        "de-DE_9:16": "output/MONITOR-001/PREMIUM2026/de-DE/9x16/MONITOR-001_9x16_de-DE.png",
+        "de-DE_16:9": "output/MONITOR-001/PREMIUM2026/de-DE/16x9/MONITOR-001_16x9_de-DE.png",
+        "ja-JP_1:1": "output/MONITOR-001/PREMIUM2026/ja-JP/1x1/MONITOR-001_1x1_ja-JP.png",
+        "ja-JP_9:16": "output/MONITOR-001/PREMIUM2026/ja-JP/9x16/MONITOR-001_9x16_ja-JP.png",
+        "ja-JP_16:9": "output/MONITOR-001/PREMIUM2026/ja-JP/16x9/MONITOR-001_16x9_ja-JP.png"
+      }
+    }
+  ],
+  "aspect_ratios": [
+    "1:1",
+    "9:16",
+    "16:9"
+  ],
+  "output_formats": [
+    "png"
+  ],
+  "image_generation_backend": "firefly",
+  "brand_guidelines_file": "examples/guidelines/brand_guidelines.md",
+  "localization_guidelines_file": "examples/guidelines/localization_rules.yaml",
+  "enable_localization": true,
+  "target_locales": [
+    "en-US",
+    "es-MX",
+    "fr-FR",
+    "de-DE",
+    "ja-JP"
+  ]
+}
