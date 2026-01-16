@@ -1,0 +1,27 @@
+# Phase 1 Example: Post-Processing for Enhanced Image Quality
+# Applies sharpening and color correction to all generated images
+
+source_file: "examples/guidelines/phase1_post_processing.yaml"
+
+primary_colors:
+  - "#0066FF"
+  - "#1A1A1A"
+
+# Standard text settings (legacy style for simplicity)
+text_color: "#FFFFFF"
+text_shadow: true
+text_shadow_color: "#000000"
+
+# NEW: Post-processing configuration (Phase 1)
+post_processing:
+  enabled: true
+
+  # Sharpening for crisp details
+  sharpening: true
+  sharpening_radius: 2.0
+  sharpening_amount: 150  # 150% sharpening
+
+  # Color correction for vivid images
+  color_correction: true
+  contrast_boost: 1.15    # 15% more contrast
+  saturation_boost: 1.10  # 10% more saturation

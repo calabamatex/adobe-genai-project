@@ -1,0 +1,42 @@
+# Phase 1 Example: Text Outlines for Maximum Readability
+# Great for images with varied or busy backgrounds
+
+source_file: "examples/guidelines/phase1_text_outlines.yaml"
+
+primary_colors:
+  - "#0066FF"
+
+# Per-element customization with outlines
+text_customization:
+  headline:
+    color: "#FFFFFF"
+    font_weight: "bold"
+    shadow:
+      enabled: false  # Outline replaces shadow
+    outline:
+      enabled: true
+      color: "#000000"
+      width: 3
+    horizontal_align: "center"
+
+  subheadline:
+    color: "#FFFFFF"
+    font_weight: "regular"
+    shadow:
+      enabled: false
+    outline:
+      enabled: true
+      color: "#000000"
+      width: 2
+    horizontal_align: "center"
+
+  cta:
+    color: "#0066FF"  # Brand color
+    font_weight: "bold"
+    shadow:
+      enabled: false
+    outline:
+      enabled: true
+      color: "#FFFFFF"
+      width: 2
+    horizontal_align: "center"

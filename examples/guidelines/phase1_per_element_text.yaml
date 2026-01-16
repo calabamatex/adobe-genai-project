@@ -1,0 +1,50 @@
+# Phase 1 Example: Per-Element Text Customization
+# This demonstrates independent styling for headline, subheadline, and CTA
+
+source_file: "examples/guidelines/phase1_per_element_text.yaml"
+
+primary_colors:
+  - "#FF6600"  # Brand orange
+  - "#0066FF"  # Brand blue
+
+# NEW: Per-element text customization (Phase 1)
+text_customization:
+  headline:
+    color: "#FFFFFF"
+    font_size_multiplier: 1.2
+    font_weight: "bold"
+    shadow:
+      enabled: true
+      color: "#000000"
+      offset_x: 3
+      offset_y: 3
+      blur_radius: 2
+    horizontal_align: "center"
+    max_width_percentage: 0.90
+
+  subheadline:
+    color: "#CCCCCC"
+    font_size_multiplier: 1.0
+    font_weight: "regular"
+    shadow:
+      enabled: false  # No shadow on subheadline for clean look
+    horizontal_align: "center"
+    max_width_percentage: 0.85
+
+  cta:
+    color: "#FF6600"  # Brand accent color
+    font_size_multiplier: 1.1
+    font_weight: "bold"
+    shadow:
+      enabled: false
+    outline:
+      enabled: true  # White outline for CTA
+      color: "#FFFFFF"
+      width: 2
+    background:
+      enabled: true  # Dark background box
+      color: "#000000"
+      opacity: 0.8
+      padding: 15
+    horizontal_align: "center"
+    max_width_percentage: 0.60

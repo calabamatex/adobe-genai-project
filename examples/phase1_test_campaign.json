@@ -1,0 +1,44 @@
+{
+  "campaign_id": "PHASE1_TEST",
+  "campaign_name": "Phase 1 Features Test Campaign",
+  "brand_name": "TechStyle Pro",
+  "target_market": "North America",
+  "target_audience": "Tech enthusiasts testing new Phase 1 features",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Experience Premium Quality",
+    "subheadline": "Advanced Features for Professional Results",
+    "cta": "Try It Now"
+  },
+  "products": [
+    {
+      "product_id": "TEST-PRODUCT-001",
+      "product_name": "Premium Wireless Headphones",
+      "product_description": "Test product for Phase 1 features: per-element text control, outlines, and post-processing",
+      "product_category": "Audio Electronics",
+      "key_features": [
+        "Per-element text customization",
+        "Text outline effects",
+        "Post-processing enhancements",
+        "Backward compatibility"
+      ],
+      "generation_prompt": "professional product photo of premium wireless headphones, sleek modern design, black matte finish, studio lighting, clean background",
+      "existing_assets": {
+        "hero": "output/TEST-PRODUCT-001/PHASE1_TEST/hero/TEST-PRODUCT-001_hero.png",
+        "en-US_1:1": "output/TEST-PRODUCT-001/PHASE1_TEST/en-US/1x1/TEST-PRODUCT-001_1x1_en-US.png"
+      }
+    }
+  ],
+  "aspect_ratios": [
+    "1:1"
+  ],
+  "output_formats": [
+    "png"
+  ],
+  "image_generation_backend": "gemini",
+  "brand_guidelines_file": "examples/guidelines/phase1_complete.yaml",
+  "enable_localization": false,
+  "target_locales": [
+    "en-US"
+  ]
+}

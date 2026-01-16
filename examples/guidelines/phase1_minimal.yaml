@@ -1,0 +1,40 @@
+# Phase 1 Example: Minimal Clean Design
+# No shadows, no outlines, just clean text
+
+source_file: "examples/guidelines/phase1_minimal.yaml"
+
+primary_colors:
+  - "#1A1A1A"
+
+# Minimal text styling - no effects
+text_customization:
+  headline:
+    color: "#FFFFFF"
+    font_weight: "bold"
+    shadow:
+      enabled: false
+    horizontal_align: "center"
+
+  subheadline:
+    color: "#CCCCCC"
+    font_weight: "regular"
+    shadow:
+      enabled: false
+    horizontal_align: "center"
+
+  cta:
+    color: "#1A1A1A"
+    font_weight: "bold"
+    shadow:
+      enabled: false
+    horizontal_align: "center"
+
+# Light post-processing for subtle enhancement
+post_processing:
+  enabled: true
+  sharpening: true
+  sharpening_radius: 1.5
+  sharpening_amount: 125
+  color_correction: true
+  contrast_boost: 1.05
+  saturation_boost: 1.03

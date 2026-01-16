@@ -1,0 +1,65 @@
+# Phase 1 Complete Example: All Features Combined
+# Demonstrates per-element text + post-processing together
+
+source_file: "examples/guidelines/phase1_complete.yaml"
+
+primary_colors:
+  - "#FF6600"  # Brand orange
+  - "#0066FF"  # Brand blue
+  - "#1A1A1A"  # Dark gray
+
+primary_font: "Arial"
+brand_voice: "Bold, innovative, premium"
+photography_style: "Modern, clean, professional product photography"
+
+# Per-element text customization with varied effects
+text_customization:
+  headline:
+    color: "#FFFFFF"
+    font_size_multiplier: 1.3
+    font_weight: "bold"
+    shadow:
+      enabled: true
+      color: "#000000"
+      offset_x: 4
+      offset_y: 4
+      blur_radius: 2
+    horizontal_align: "center"
+    max_width_percentage: 0.90
+
+  subheadline:
+    color: "#E0E0E0"
+    font_size_multiplier: 1.0
+    font_weight: "regular"
+    shadow:
+      enabled: false  # Clean, no shadow
+    horizontal_align: "center"
+    max_width_percentage: 0.80
+
+  cta:
+    color: "#FFFFFF"
+    font_size_multiplier: 1.15
+    font_weight: "bold"
+    shadow:
+      enabled: false
+    outline:
+      enabled: true
+      color: "#FF6600"  # Brand color outline
+      width: 2
+    background:
+      enabled: true
+      color: "#FF6600"  # Matching background
+      opacity: 0.9
+      padding: 18
+    horizontal_align: "center"
+    max_width_percentage: 0.65
+
+# Post-processing for premium quality
+post_processing:
+  enabled: true
+  sharpening: true
+  sharpening_radius: 2.5
+  sharpening_amount: 175    # Strong sharpening
+  color_correction: true
+  contrast_boost: 1.2       # 20% contrast boost
+  saturation_boost: 1.15    # 15% saturation boost

@@ -19,7 +19,7 @@ from src.genai.claude import ClaudeService
 from src.parsers.brand_parser import BrandGuidelinesParser
 from src.parsers.localization_parser import LocalizationGuidelinesParser
 from src.parsers.legal_parser import LegalComplianceParser
-from src.image_processor import ImageProcessor
+from src.image_processor_v2 import ImageProcessorV2 as ImageProcessor
 from src.legal_checker import LegalComplianceChecker
 from src.storage import StorageManager
 
@@ -265,6 +265,13 @@ class CreativeAutomationPipeline:
                                             brand_guidelines
                                         )
 
+                                # NEW: Apply post-processing (Phase 1)
+                                if brand_guidelines and brand_guidelines.post_processing:
+                                    final_image = self.image_processor.apply_post_processing(
+                                        final_image,
+                                        brand_guidelines.post_processing
+                                    )
+
                                 output_format = brief.output_formats[0] if brief.output_formats else "png"
                                 asset_path = self.storage.get_asset_path(
                                     brief.campaign_id,
@@ -301,6 +308,13 @@ class CreativeAutomationPipeline:
                                         logo_path,
                                         brand_guidelines
                                     )
+
+                            # NEW: Apply post-processing (Phase 1)
+                            if brand_guidelines and brand_guidelines.post_processing:
+                                final_image = self.image_processor.apply_post_processing(
+                                    final_image,
+                                    brand_guidelines.post_processing
+                                )
 
                             # Save
                             output_format = brief.output_formats[0] if brief.output_formats else "png"
