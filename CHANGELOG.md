@@ -67,6 +67,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `--help` flag with usage examples
   - File existence validation
   - Default values support
+- 🛠️ **Campaign Brief Generator Script** (`scripts/generate_campaign_brief.py`)
+  - Generate campaign briefs with enhanced prompt engineering
+  - 7 category templates (electronics, fashion, food, beauty, automotive, premium audio, display tech)
+  - Structured prompts with professional photography terminology
+  - Style, composition, lighting, background, and detail parameters
+  - Negative prompts for quality control
+  - 30-40% image quality improvement potential
+- 📚 **IMAGE_QUALITY_OPTIMIZATION.md** (1,000+ lines)
+  - Advanced prompt engineering strategies
+  - JSON structured prompts with Pydantic models
+  - Backend-specific optimization (Firefly, DALL-E, Gemini)
+  - Multi-pass generation and quality scoring
+  - Prompt template library by category
 - 📚 Enhanced documentation with new examples
 
 ### Fixed

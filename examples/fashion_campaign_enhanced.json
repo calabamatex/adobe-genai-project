@@ -1,0 +1,96 @@
+{
+  "campaign_id": "FASHION_SUMMER_2026",
+  "campaign_name": "Summer Fashion Collection 2026",
+  "brand_name": "StyleHouse",
+  "target_market": "North America & Europe",
+  "target_audience": "Fashion-conscious individuals aged 20-35",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Define Your Style",
+    "subheadline": "Premium Fashion for Modern Living",
+    "cta": "Shop Collection"
+  },
+  "products": [
+    {
+      "product_id": "SNEAKERS-001",
+      "product_name": "Premium Designer Sneakers",
+      "product_description": "High-end designer sneakers with sustainable materials, contemporary design, and superior comfort.",
+      "product_category": "Fashion Footwear",
+      "key_features": [
+        "Sustainable materials",
+        "Contemporary design",
+        "Superior comfort cushioning",
+        "Premium leather and mesh"
+      ],
+      "generation_prompt": "premium designer sneakers on lifestyle model, high fashion editorial, lifestyle photography, contemporary aesthetic, dynamic model pose, rule of thirds placement, lifestyle context, natural window lighting, soft diffused light, golden hour warmth, urban setting, minimalist interior, neutral tones, fabric texture visible, color accuracy critical, natural skin tones, movement captured",
+      "enhanced_generation": {
+        "base_prompt": "premium designer sneakers on lifestyle model",
+        "style_parameters": {
+          "photography_style": "high fashion editorial",
+          "artistic_style": "contemporary lifestyle aesthetic",
+          "color_palette": [
+            "neutral earth tones",
+            "cream",
+            "sage green"
+          ],
+          "mood": "aspirational lifestyle",
+          "quality_level": "high resolution editorial quality"
+        },
+        "composition": {
+          "primary_subject": "sneakers on model in lifestyle context",
+          "viewing_angle": "eye level candid shot",
+          "depth_of_field": "medium DOF with sneakers in focus",
+          "rule_of_thirds": true,
+          "negative_space": "natural environmental negative space"
+        },
+        "lighting": {
+          "primary_light": "natural window light",
+          "fill_light": "soft ambient indoor light",
+          "rim_light": "subtle outdoor backlight",
+          "color_temperature": "warm 4500K golden hour",
+          "quality": "soft natural lighting"
+        },
+        "background": {
+          "type": "environment",
+          "colors": [
+            "urban setting",
+            "minimalist interior",
+            "neutral tones"
+          ],
+          "texture": "natural textures, concrete, wood",
+          "style": "contemporary lifestyle environment"
+        },
+        "details": {
+          "focus_areas": [
+            "sneaker design details",
+            "material texture",
+            "laces",
+            "sole"
+          ],
+          "texture_emphasis": "leather texture, mesh detail, stitching",
+          "quality_indicators": "natural lifestyle context, authentic moment, premium product detail"
+        },
+        "negative_prompt": "stiff pose, artificial colors, harsh lighting, cluttered background"
+      },
+      "existing_assets": {}
+    }
+  ],
+  "aspect_ratios": [
+    "1:1",
+    "9:16",
+    "16:9",
+    "4:5"
+  ],
+  "output_formats": [
+    "png"
+  ],
+  "image_generation_backend": "dalle",
+  "brand_guidelines_file": "examples/guidelines/brand_guidelines.md",
+  "localization_guidelines_file": "examples/guidelines/localization_rules.yaml",
+  "enable_localization": true,
+  "target_locales": [
+    "en-US",
+    "fr-FR",
+    "de-DE"
+  ]
+}

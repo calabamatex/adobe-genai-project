@@ -1,0 +1,162 @@
+{
+  "campaign_id": "PREMIUM_AUDIO_2026",
+  "campaign_name": "Premium Audio Experience 2026",
+  "brand_name": "AudioElite Pro",
+  "target_market": "Global",
+  "target_audience": "Audiophiles and professionals aged 25-50 seeking premium audio quality",
+  "campaign_message": {
+    "locale": "en-US",
+    "headline": "Experience Sound Perfection",
+    "subheadline": "Premium Audio Engineering for Discerning Listeners",
+    "cta": "Discover Premium Audio"
+  },
+  "products": [
+    {
+      "product_id": "EARBUDS-PRO-001",
+      "product_name": "Elite True Wireless Earbuds Pro",
+      "product_description": "Premium true wireless earbuds with adaptive ANC, spatial audio, and audiophile-grade sound drivers. 8-hour battery life with wireless charging case.",
+      "product_category": "Premium Audio",
+      "key_features": [
+        "Adaptive Active Noise Cancellation",
+        "Spatial Audio with head tracking",
+        "8 hours battery per charge (32 hours total)",
+        "Audiophile-grade sound drivers",
+        "Water resistant IPX5",
+        "Premium metal charging case"
+      ],
+      "generation_prompt": "premium true wireless earbuds in sleek charging case, premium tech product photography, high-end audio aesthetic, luxury lifestyle, centered with lifestyle context, detailed close-up shots, negative space for branding, dramatic studio lighting with rim lights, metallic highlights, soft key light, minimalist modern setting, dark gradient, subtle texture, material quality visible (metal, leather), controls clearly shown, premium craftsmanship details",
+      "enhanced_generation": {
+        "base_prompt": "premium true wireless earbuds in sleek charging case",
+        "style_parameters": {
+          "photography_style": "commercial product photography",
+          "artistic_style": "high-end tech aesthetic",
+          "color_palette": [
+            "metallic silver",
+            "deep black",
+            "subtle blue accent"
+          ],
+          "mood": "premium luxury",
+          "quality_level": "ultra high resolution 8K"
+        },
+        "composition": {
+          "primary_subject": "earbuds displayed in open charging case",
+          "viewing_angle": "3/4 angle from above",
+          "depth_of_field": "shallow DOF with sharp focus on earbuds",
+          "rule_of_thirds": true,
+          "negative_space": "ample space on right side for text overlay"
+        },
+        "lighting": {
+          "primary_light": "soft key light from 45 degrees",
+          "fill_light": "subtle fill to lift shadows",
+          "rim_light": "strong rim light highlighting metallic edges",
+          "color_temperature": "cool daylight 5500K",
+          "quality": "soft studio lighting"
+        },
+        "background": {
+          "type": "gradient",
+          "colors": [
+            "deep charcoal",
+            "midnight blue"
+          ],
+          "texture": "subtle reflective surface",
+          "style": "minimalist tech environment"
+        },
+        "details": {
+          "focus_areas": [
+            "premium metal finish",
+            "charging contacts",
+            "brand logo"
+          ],
+          "texture_emphasis": "brushed metal texture on case",
+          "quality_indicators": "sharp edges, crisp reflections, visible craftsmanship"
+        },
+        "negative_prompt": "cheap plastic appearance, flat lighting, cluttered, low resolution"
+      },
+      "existing_assets": {}
+    },
+    {
+      "product_id": "HEADPHONES-PRO-001",
+      "product_name": "Elite Over-Ear Headphones Pro",
+      "product_description": "Premium wireless over-ear headphones with advanced ANC, LDAC high-res audio, and 40-hour battery life. Luxurious leather ear cushions and aluminum construction.",
+      "product_category": "Premium Audio",
+      "key_features": [
+        "Advanced Hybrid ANC",
+        "LDAC high-resolution audio codec",
+        "40-hour battery life",
+        "Premium leather ear cushions",
+        "Aluminum and steel construction",
+        "Multi-point connectivity"
+      ],
+      "generation_prompt": "premium over-ear wireless headphones with active noise cancellation, premium tech product photography, high-end audio aesthetic, luxury lifestyle, centered with lifestyle context, detailed close-up shots, negative space for branding, dramatic studio lighting with rim lights, metallic highlights, soft key light, minimalist modern setting, dark gradient, subtle texture, leather ear cushions visible, metal headband detail, premium build quality, control buttons clearly shown",
+      "enhanced_generation": {
+        "base_prompt": "premium over-ear wireless headphones with active noise cancellation",
+        "style_parameters": {
+          "photography_style": "commercial product photography",
+          "artistic_style": "luxury audio equipment aesthetic",
+          "color_palette": [
+            "matte black",
+            "brushed aluminum",
+            "rich brown leather"
+          ],
+          "mood": "professional premium",
+          "quality_level": "ultra high resolution 8K"
+        },
+        "composition": {
+          "primary_subject": "headphones positioned at elegant angle",
+          "viewing_angle": "3/4 side view showing ear cups and headband",
+          "depth_of_field": "medium DOF with primary focus on ear cup details",
+          "rule_of_thirds": true,
+          "negative_space": "clean space above for headline text"
+        },
+        "lighting": {
+          "primary_light": "dramatic side key light",
+          "fill_light": "soft fill maintaining detail in shadows",
+          "rim_light": "accent rim light on metal headband",
+          "color_temperature": "neutral 5000K",
+          "quality": "professional studio lighting setup"
+        },
+        "background": {
+          "type": "gradient",
+          "colors": [
+            "charcoal gray",
+            "warm black"
+          ],
+          "texture": "subtle fabric texture",
+          "style": "minimalist luxury studio"
+        },
+        "details": {
+          "focus_areas": [
+            "leather ear cushion texture",
+            "metal headband finish",
+            "control buttons",
+            "brand emblem"
+          ],
+          "texture_emphasis": "visible leather grain, brushed metal finish",
+          "quality_indicators": "premium build quality, precise manufacturing details, professional craftsmanship"
+        },
+        "negative_prompt": "cheap plastic appearance, flat lighting, cluttered, low resolution"
+      },
+      "existing_assets": {}
+    }
+  ],
+  "aspect_ratios": [
+    "1:1",
+    "9:16",
+    "16:9"
+  ],
+  "output_formats": [
+    "png"
+  ],
+  "image_generation_backend": "firefly",
+  "brand_guidelines_file": "examples/guidelines/brand_guidelines.md",
+  "localization_guidelines_file": "examples/guidelines/localization_rules.yaml",
+  "enable_localization": true,
+  "target_locales": [
+    "en-US",
+    "es-MX",
+    "fr-FR",
+    "de-DE",
+    "ja-JP",
+    "ko-KR"
+  ]
+}
