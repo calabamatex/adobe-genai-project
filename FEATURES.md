@@ -27,6 +27,10 @@
 
 ### Legal Compliance
 
+**Comprehensive regulatory compliance system with pre-generation validation**
+
+#### Core Compliance Features
+
 | Feature | Status | Description |
 |---------|--------|-------------|
 | Pre-generation checking | ✅ | Validate before asset creation |
@@ -39,6 +43,30 @@
 | Locale-specific rules | ✅ | Market-specific regulations |
 | Campaign blocking | ✅ | Blocks on ERROR violations |
 | Compliance reporting | ✅ | Detailed violation reports |
+| Required disclaimers | ✅ | Automatic tracking and reminders |
+| Audit trail | ✅ | Complete compliance documentation |
+
+#### Supported Regulatory Frameworks
+
+| Framework | Regulations | Industry | Features |
+|-----------|-------------|----------|----------|
+| **FTC General** | Truth in Advertising | Consumer Goods | False advertising prevention, endorsement guidelines |
+| **FDA Health** | Medical Claims | Healthcare/Pharma | Disease claim blocking, supplement disclaimers |
+| **SEC/FINRA** | Investment Disclosures | Financial Services | Risk disclaimers, guarantee prohibition |
+
+#### Compliance Severity Levels
+
+| Level | Behavior | Use Case | Example |
+|-------|----------|----------|---------|
+| **ERROR** | ❌ Blocks generation | Critical violations | "This product cures cancer" (prohibited medical claim) |
+| **WARNING** | ⚠️ Advisory notice | Best practices | Missing optional disclaimer |
+| **INFO** | ℹ️ Informational | Reminders | Suggested language improvements |
+
+#### Documentation
+
+- **[LEGAL_COMPLIANCE.md](examples/guidelines/LEGAL_COMPLIANCE.md)** (600+ lines) - Complete system guide
+- **[LEGAL_EXAMPLES.md](examples/guidelines/LEGAL_EXAMPLES.md)** (300+ lines) - Real-world examples
+- **[LEGAL_COMPLIANCE_IMPLEMENTATION.md](docs/LEGAL_COMPLIANCE_IMPLEMENTATION.md)** (400+ lines) - Technical implementation
 
 ### Brand Guidelines
 
