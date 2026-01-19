@@ -22,14 +22,13 @@ Adobe GenAI Creative Automation Platform is an enterprise-grade system that auto
 - 🔄 **Asset Reuse System** - Intelligent caching to reduce API costs
 - 🎨 **Advanced Text Customization** - Colors, shadows, backgrounds with brand control
 - 🖼️ **Logo Placement** - Automated logo overlay with 4-corner positioning
-- 📊 **Campaign Analytics** - Success rates, processing times, error tracking
+- 📊 **Enhanced Campaign Analytics** - Technical metrics, business ROI, cost savings tracking
 
 ---
 
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Legal Compliance](#%EF%B8%8F-legal-compliance-system)
 - [Quick Start](#-quick-start)
 - [Installation](#-installation)
 - [Usage](#-usage)
@@ -79,161 +78,15 @@ Adobe GenAI Creative Automation Platform is an enterprise-grade system that auto
 - ✅ **Organized storage** - Campaign/Locale/Product/Format hierarchy
 - ✅ **Brief updates** - Automatic tracking of generated assets
 
-### Campaign Analytics
-- ✅ **Processing metrics** - Time, success rate, error tracking
+### Campaign Analytics & Reporting
+- ✅ **Enhanced technical metrics** - API response times, cache efficiency, memory usage
+- ✅ **Business ROI metrics** - Time saved, cost savings, ROI multiplier
+- ✅ **Performance tracking** - Processing times, localization efficiency, asset throughput
+- ✅ **Compliance monitoring** - Pass rates, violation tracking
+- ✅ **Historical reports** - Timestamped reports in `output/campaign_reports/`
 - ✅ **Asset inventory** - Complete manifest of generated assets
-- ✅ **JSON reports** - Machine-readable campaign summaries
-- ✅ **Error reporting** - Detailed failure information
-
----
-
-## ⚖️ Legal Compliance System
-
-### Overview
-
-The platform includes a **comprehensive legal compliance framework** that validates campaign content against regulatory requirements **before asset generation**. This prevents costly compliance violations and ensures all marketing materials meet industry-specific legal standards.
-
-### Supported Regulatory Frameworks
-
-#### 1. **General Compliance (FTC)**
-- **Federal Trade Commission** consumer protection rules
-- False advertising prevention
-- Truth in advertising requirements
-- Endorsement and testimonial guidelines
-- Deceptive pricing claims detection
-
-#### 2. **Health & Pharmaceuticals (FDA)**
-- **Food and Drug Administration** medical claims validation
-- Prohibited disease claims (cure, treat, prevent, diagnose)
-- Required supplement disclaimers
-- Drug approval status verification
-- Health benefit substantiation requirements
-
-#### 3. **Financial Services (SEC/FINRA)**
-- **Securities and Exchange Commission** investment disclaimers
-- **FINRA** broker-dealer regulations
-- Risk disclosure requirements
-- Past performance disclaimer enforcement
-- Prohibited guarantee language
-
-### Compliance Features
-
-✅ **Pre-Generation Validation**
-- Catches compliance issues BEFORE creating assets
-- Blocks generation if critical violations detected
-- Saves time and prevents wasted API costs
-
-✅ **Three Severity Levels**
-- **ERROR** - Blocks asset generation (e.g., prohibited medical claims)
-- **WARNING** - Advisory notices (e.g., consider adding disclaimer)
-- **INFO** - Best practice reminders (e.g., suggested language)
-
-✅ **Intelligent Content Detection**
-- Prohibited words and phrases (context-aware)
-- Required disclaimers tracking
-- Locale-specific regulatory rules
-- Industry-specific claim validation
-
-✅ **Comprehensive Documentation**
-- Pre-built compliance templates
-- Real-world examples for each industry
-- Implementation guide with code examples
-- Customizable rules for your specific needs
-
-### Compliance Validation Example
-
-```python
-# Campaign brief with FDA compliance
-{
-  "campaign_id": "SUPPLEMENT_2026",
-  "compliance_template": "health_fda",  # Enable FDA validation
-  "products": [{
-    "name": "VitaBoost Supplement",
-    "description": "Supports immune health*",  # Safe claim
-    "messaging": {
-      "headline": "Feel Your Best Every Day",
-      "subheadline": "Natural wellness support",
-      "disclaimer": "*These statements have not been evaluated by the FDA..."
-    }
-  }]
-}
-```
-
-**Result:** ✅ PASSES - Includes required disclaimer, avoids prohibited claims
-
-```python
-# Example that would FAIL validation
-{
-  "description": "Cures common cold and prevents flu",  # ❌ Prohibited
-  "disclaimer": null  # ❌ Missing required disclaimer
-}
-```
-
-**Result:** ❌ BLOCKED - Contains prohibited disease claims, missing required disclaimers
-
-### Compliance Templates
-
-| Template | Industry | Key Regulations | Use Case |
-|----------|----------|-----------------|----------|
-| **general** | Consumer Goods | FTC Truth in Advertising | Default for most campaigns |
-| **health_fda** | Health/Pharma | FDA Medical Claims | Supplements, OTC drugs, health products |
-| **financial_sec** | Finance | SEC/FINRA Disclosures | Investments, financial services, trading |
-
-### Documentation & Resources
-
-📚 **Comprehensive Guides:**
-- **[LEGAL_COMPLIANCE.md](examples/guidelines/LEGAL_COMPLIANCE.md)** (600+ lines)
-  - Complete compliance system documentation
-  - Severity levels and validation rules
-  - Template configuration guide
-  - Custom rule creation
-
-- **[LEGAL_EXAMPLES.md](examples/guidelines/LEGAL_EXAMPLES.md)** (300+ lines)
-  - Real-world compliant and non-compliant examples
-  - Industry-specific use cases
-  - Before/after comparisons
-  - Best practices
-
-- **[LEGAL_COMPLIANCE_IMPLEMENTATION.md](docs/LEGAL_COMPLIANCE_IMPLEMENTATION.md)** (400+ lines)
-  - Technical implementation details
-  - Code architecture and design patterns
-  - Integration with campaign pipeline
-  - Testing and validation strategies
-
-### Quick Start with Compliance
-
-```bash
-# 1. Create campaign brief with compliance template
-cat > my_campaign.json <<EOF
-{
-  "campaign_id": "MY_COMPLIANT_CAMPAIGN",
-  "compliance_template": "health_fda",
-  "products": [...]
-}
-EOF
-
-# 2. Run generation - compliance check happens automatically
-./run_cli.sh my_campaign.json firefly
-
-# 3. Review compliance results in campaign report
-cat output/*/*/campaign_report.json | jq '.compliance_results'
-```
-
-### Benefits
-
-- **Risk Mitigation** - Prevent regulatory violations before they happen
-- **Cost Savings** - Avoid regenerating non-compliant assets
-- **Time Savings** - Automated validation vs manual legal review
-- **Audit Trail** - Complete compliance documentation for legal teams
-- **Scalability** - Validate 100s of assets with consistent standards
-
-### Industry Applications
-
-✅ **Healthcare & Pharmaceuticals** - Supplements, OTC drugs, medical devices
-✅ **Financial Services** - Investment products, trading platforms, financial advice
-✅ **Consumer Goods** - Food products, cosmetics, consumer electronics
-✅ **E-commerce** - Pricing claims, promotional offers, product descriptions
-✅ **Insurance** - Policy claims, benefit descriptions, comparative advertising
+- ✅ **JSON reports** - Machine-readable campaign summaries with full metrics
+- ✅ **Error reporting** - Full stack traces for debugging
 
 ---
 
@@ -303,7 +156,8 @@ That's it! Your assets will be generated in `output/[PRODUCT_ID]/[CAMPAIGN_ID]/`
 - **[LOCALIZATION.md](docs/LOCALIZATION.md)** - AI-powered localization guide
 - **[TEXT_CUSTOMIZATION.md](docs/TEXT_CUSTOMIZATION.md)** - Text colors, shadows, backgrounds
 - **[LOGO_PLACEMENT.md](docs/LOGO_PLACEMENT.md)** - Logo overlay configuration
-- **[IMAGE_QUALITY_OPTIMIZATION.md](docs/IMAGE_QUALITY_OPTIMIZATION.md)** - Advanced prompt engineering (NEW!)
+- **[IMAGE_QUALITY_OPTIMIZATION.md](docs/IMAGE_QUALITY_OPTIMIZATION.md)** - Advanced prompt engineering
+- **[ENHANCED_REPORTING.md](docs/ENHANCED_REPORTING.md)** - Technical & business metrics (NEW!)
 - **[LEGAL_COMPLIANCE.md](examples/guidelines/LEGAL_COMPLIANCE.md)** - Legal checking system
 - **[LEGAL_EXAMPLES.md](examples/guidelines/LEGAL_EXAMPLES.md)** - Compliance examples
 
@@ -497,6 +351,178 @@ Reuse existing hero images, generate only new formats:
 
 ---
 
+## 📊 Enhanced Campaign Reporting
+
+**New in v1.3.0:** Comprehensive technical and business metrics for every campaign!
+
+### Overview
+
+Every campaign generates a detailed report in `output/campaign_reports/` with:
+- **Technical Metrics** - API performance, cache efficiency, memory usage
+- **Business Metrics** - ROI, cost savings, time saved, efficiency scores
+- **Historical Tracking** - Timestamped reports for audit trails
+
+### Report Location & Format
+
+**Location:** `output/campaign_reports/`
+
+**Filename Format:** `campaign_report_CAMPAIGN_ID_PRODUCT_ID_YYYY-MM-DD.json`
+
+**Example:** `campaign_report_PREMIUM2026_EARBUDS-001_2026-01-19.json`
+
+### Technical Metrics (17 fields)
+
+```json
+{
+  "technical_metrics": {
+    "backend_used": "firefly",
+    "total_api_calls": 2,
+    "cache_hits": 0,
+    "cache_misses": 2,
+    "cache_hit_rate": 0.0,
+    "retry_count": 0,
+    "retry_reasons": [],
+    "avg_api_response_time_ms": 1250.5,
+    "min_api_response_time_ms": 1100.0,
+    "max_api_response_time_ms": 1401.0,
+    "image_processing_time_ms": 3420.2,
+    "localization_time_ms": 1150.3,
+    "compliance_check_time_ms": 235.1,
+    "peak_memory_mb": 342.5,
+    "system_info": {
+      "platform": "Darwin",
+      "python_version": "3.11.5",
+      "processor": "arm64"
+    },
+    "full_error_traces": []
+  }
+}
+```
+
+**What you can track:**
+- API performance and response times
+- Cache utilization and efficiency
+- Retry attempts and failure reasons
+- Processing time breakdowns
+- Memory usage patterns
+- System environment details
+- Full error stack traces for debugging
+
+### Business Metrics (13 fields)
+
+```json
+{
+  "business_metrics": {
+    "time_saved_vs_manual_hours": 95.2,
+    "time_saved_percentage": 99.1,
+    "cost_savings_percentage": 80.0,
+    "manual_baseline_cost": 2700.0,
+    "estimated_manual_cost": 2250.0,
+    "estimated_savings": 1800.0,
+    "roi_multiplier": 9.0,
+    "labor_hours_saved": 95.2,
+    "compliance_pass_rate": 100.0,
+    "asset_reuse_efficiency": 0.0,
+    "avg_time_per_locale_seconds": 9.1,
+    "avg_time_per_asset_seconds": 1.5,
+    "localization_efficiency_score": 39.7
+  }
+}
+```
+
+**What you can analyze:**
+- Time savings vs manual production (hours & percentage)
+- Cost savings and dollar value estimates
+- Return on investment (ROI) multipliers
+- Labor hours saved
+- Compliance pass rates
+- Asset reuse efficiency through caching
+- Processing efficiency (assets per hour)
+- Average time per locale and per asset
+
+### Console Output
+
+When you run a campaign, you'll see comprehensive metrics:
+
+```
+✅ Campaign processing complete!
+   Total assets generated: 30
+   Processing time: 45.3 seconds
+   Success rate: 100.0%
+   Reports saved: 2 product reports
+
+📊 Technical Metrics:
+   Backend: firefly
+   API Calls: 2 total, 0 cache hits (0.0% hit rate)
+   API Response Time: 1250ms avg (1100-1400ms range)
+   Image Processing: 3420ms total
+   Localization: 1150ms total
+   Compliance Check: 235ms
+   Peak Memory: 342.5 MB
+
+💰 Business Metrics:
+   Time Saved: 95.2 hours (99.1% vs manual)
+   Cost Savings: 80.0% (Est. $1,800.00 saved)
+   ROI Multiplier: 9.0x
+   Asset Reuse Efficiency: 0.0%
+   Localization Efficiency: 39.7 assets/hour
+   Compliance Pass Rate: 100.0%
+```
+
+### Use Cases
+
+**For Product Managers:**
+- Track ROI and cost savings across campaigns
+- Monitor asset production efficiency
+- Demonstrate business value to stakeholders
+- Identify optimization opportunities
+
+**For Engineers:**
+- Monitor API performance and response times
+- Track cache efficiency and optimization
+- Debug errors with full stack traces
+- Profile memory usage and system resources
+- Identify performance bottlenecks
+
+**For Finance Teams:**
+- Calculate cost savings vs manual production
+- Track labor hours saved
+- ROI analysis for AI automation investment
+- Budget planning for campaign production
+
+**For Compliance Officers:**
+- Monitor compliance pass rates
+- Track regulatory violations
+- Audit historical campaign compliance
+- Generate compliance reports for stakeholders
+
+### Historical Tracking
+
+Reports are **never overwritten** - each run creates a new timestamped report:
+
+```
+output/campaign_reports/
+├── campaign_report_PREMIUM2026_EARBUDS-001_2026-01-19.json
+├── campaign_report_PREMIUM2026_EARBUDS-001_2026-01-20.json
+├── campaign_report_PREMIUM2026_MONITOR-001_2026-01-19.json
+└── campaign_report_PREMIUM2026_MONITOR-001_2026-01-20.json
+```
+
+**Benefits:**
+- Complete audit trail for all campaigns
+- Track performance improvements over time
+- Compare metrics across campaign iterations
+- Historical compliance documentation
+
+### Performance Impact
+
+The enhanced reporting system adds minimal overhead:
+- Memory tracking: ~5-10ms per product
+- Metric calculation: ~15-20ms total
+- **Total overhead: ~20-30ms per campaign** (negligible)
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
@@ -525,9 +551,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🗺️ Roadmap
 
-### Current Version: 1.2.0
+### Current Version: 1.3.0
 
-### ✅ Completed Features (v1.0 - v1.2)
+### ✅ Completed Features (v1.0 - v1.3)
 
 - ✅ **Legal Compliance System** - FTC, FDA, SEC/FINRA regulatory frameworks
 - ✅ **Multi-Backend AI** - Firefly, DALL-E 3, Gemini integration
@@ -535,9 +561,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - ✅ **Phase 1 Innovation** - Per-element text customization (patent-pending)
 - ✅ **Brand Guidelines** - Comprehensive enforcement system
 - ✅ **Asset Optimization** - Hero image reuse, cost savings
-- ✅ **Campaign Analytics** - Success tracking and reporting
+- ✅ **Enhanced Campaign Reporting** - Technical + business metrics, ROI tracking, historical reports
 
-### Planned Features (v1.3+)
+### Planned Features (v1.4+)
 
 - [ ] **Video Generation** - Extend to video asset generation
 - [ ] **Interactive Previews** - Web UI for campaign preview

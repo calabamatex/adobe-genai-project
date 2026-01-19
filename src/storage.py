@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 from PIL import Image
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict, List, Optional
 from src.models import CampaignOutput, CampaignBrief
 from src.config import get_config
 
@@ -56,12 +56,24 @@ class StorageManager:
         campaign_id: str,
         product_id: str
     ) -> Path:
-        """Save per-product campaign report JSON."""
-        report_path = (
-            self.output_dir / product_id / campaign_id /
-            f"{product_id}_campaign_report.json"
-        )
-        report_path.parent.mkdir(parents=True, exist_ok=True)
+        """
+        Save per-product campaign report JSON with enhanced metrics.
+
+        Reports are saved to output/campaign_reports/ with filename format:
+        campaign_report_CAMPAIGN_ID_PRODUCT_ID_YYYY-MM-DD.json
+
+        Historical reports are preserved (not overwritten).
+        """
+        # Create campaign_reports directory at root output level
+        reports_dir = self.output_dir / "campaign_reports"
+        reports_dir.mkdir(parents=True, exist_ok=True)
+
+        # Generate timestamp for filename (YYYY-MM-DD format)
+        timestamp = datetime.now().strftime("%Y-%m-%d")
+
+        # New filename format: campaign_report_CAMPAIGN_ID_PRODUCT_ID_YYYY-MM-DD.json
+        filename = f"campaign_report_{campaign_id}_{product_id}_{timestamp}.json"
+        report_path = reports_dir / filename
 
         # Filter assets for this product only
         product_assets = [

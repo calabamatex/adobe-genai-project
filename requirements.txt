@@ -8,6 +8,9 @@ aiohttp>=3.9.1
 # Image Processing
 Pillow>=10.3.0
 
+# System Monitoring
+psutil>=5.9.0
+
 # Document Parsing
 PyMuPDF>=1.23.8
 python-docx>=1.1.0

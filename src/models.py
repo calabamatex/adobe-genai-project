@@ -501,6 +501,82 @@ class GeneratedAsset(BaseModel):
         }
 
 
+class TechnicalMetrics(BaseModel):
+    """Advanced technical metrics for campaign generation."""
+    backend_used: str = Field(..., description="AI backend used (firefly, openai, gemini)")
+    total_api_calls: int = Field(default=0, description="Total API calls made")
+    cache_hits: int = Field(default=0, description="Number of cache hits (hero image reuse)")
+    cache_misses: int = Field(default=0, description="Number of cache misses")
+    cache_hit_rate: float = Field(default=0.0, description="Cache hit rate percentage (0-100)")
+    retry_count: int = Field(default=0, description="Total number of retries across all operations")
+    retry_reasons: List[str] = Field(default_factory=list, description="Reasons for retries")
+    avg_api_response_time_ms: float = Field(default=0.0, description="Average API response time in milliseconds")
+    min_api_response_time_ms: float = Field(default=0.0, description="Minimum API response time")
+    max_api_response_time_ms: float = Field(default=0.0, description="Maximum API response time")
+    image_processing_time_ms: float = Field(default=0.0, description="Total image processing time")
+    localization_time_ms: float = Field(default=0.0, description="Total localization time")
+    compliance_check_time_ms: float = Field(default=0.0, description="Total compliance checking time")
+    peak_memory_mb: float = Field(default=0.0, description="Peak memory usage in MB")
+    system_info: Dict[str, str] = Field(default_factory=dict, description="System environment details")
+    full_error_traces: List[Dict[str, str]] = Field(default_factory=list, description="Full error stack traces")
+
+
+class BusinessMetrics(BaseModel):
+    """Business-relevant metrics for ROI and efficiency analysis."""
+    time_saved_vs_manual_hours: float = Field(
+        default=0.0,
+        description="Time saved vs manual process (assuming 3-5 days = 72-120 hours)"
+    )
+    time_saved_percentage: float = Field(
+        default=0.0,
+        description="Percentage time saved vs manual (0-100)"
+    )
+    cost_savings_percentage: float = Field(
+        default=0.0,
+        description="Estimated cost savings percentage vs manual (70-90%)"
+    )
+    manual_baseline_cost: float = Field(
+        default=2700.0,
+        description="Estimated manual production cost baseline"
+    )
+    estimated_manual_cost: float = Field(
+        default=0.0,
+        description="What this campaign would cost manually"
+    )
+    estimated_savings: float = Field(
+        default=0.0,
+        description="Estimated dollar savings vs manual"
+    )
+    roi_multiplier: float = Field(
+        default=0.0,
+        description="ROI multiplier (savings / actual cost spent)"
+    )
+    labor_hours_saved: float = Field(
+        default=0.0,
+        description="Estimated labor hours saved (at $50/hr avg)"
+    )
+    compliance_pass_rate: float = Field(
+        default=100.0,
+        description="Percentage of content that passed compliance (0-100)"
+    )
+    asset_reuse_efficiency: float = Field(
+        default=0.0,
+        description="Percentage of API calls saved through hero image reuse (0-100)"
+    )
+    avg_time_per_locale_seconds: float = Field(
+        default=0.0,
+        description="Average processing time per locale"
+    )
+    avg_time_per_asset_seconds: float = Field(
+        default=0.0,
+        description="Average processing time per asset"
+    )
+    localization_efficiency_score: float = Field(
+        default=0.0,
+        description="Localization efficiency (assets per hour)"
+    )
+
+
 class CampaignOutput(BaseModel):
     """Complete campaign output with all generated assets and metadata."""
     campaign_id: str = Field(..., description="Campaign identifier")
@@ -520,6 +596,16 @@ class CampaignOutput(BaseModel):
         description="Generation completion timestamp"
     )
 
+    # Enhanced metrics (v1.3.0+)
+    technical_metrics: Optional[TechnicalMetrics] = Field(
+        default=None,
+        description="Advanced technical metrics"
+    )
+    business_metrics: Optional[BusinessMetrics] = Field(
+        default=None,
+        description="Business-relevant metrics for ROI analysis"
+    )
+
     class Config:
         json_schema_extra = {
             "example": {
@@ -530,6 +616,17 @@ class CampaignOutput(BaseModel):
                 "locales_processed": ["en-US", "es-MX"],
                 "products_processed": ["PROD-001", "PROD-002"],
                 "processing_time_seconds": 145.3,
-                "success_rate": 0.95
+                "success_rate": 0.95,
+                "technical_metrics": {
+                    "backend_used": "firefly",
+                    "total_api_calls": 15,
+                    "cache_hits": 10,
+                    "cache_hit_rate": 66.7
+                },
+                "business_metrics": {
+                    "time_saved_vs_manual_hours": 95.9,
+                    "cost_savings_percentage": 89.0,
+                    "roi_multiplier": 8.5
+                }
             }
         }

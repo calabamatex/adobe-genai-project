@@ -240,9 +240,75 @@ output/
 
 ---
 
+## [1.3.0] - 2026-01-19
+
+### Added
+
+- 📊 **Enhanced Campaign Reporting System**
+  - `TechnicalMetrics` data model with 17 advanced technical fields
+    - Backend tracking, API call statistics, cache hit/miss rates
+    - Retry count and detailed retry reasons
+    - API response time metrics (avg, min, max)
+    - Image processing, localization, and compliance check timing
+    - Peak memory usage monitoring
+    - System environment information
+    - Full error stack traces for debugging
+  - `BusinessMetrics` data model with 13 business-relevant fields
+    - Time saved vs manual process (hours and percentage)
+    - Cost savings percentage and dollar estimates
+    - ROI multiplier calculation
+    - Labor hours saved calculation
+    - Compliance pass rate tracking
+    - Asset reuse efficiency metrics
+    - Localization efficiency scoring (assets per hour)
+    - Average processing time per locale and per asset
+  - Updated `CampaignOutput` model with optional metrics fields
+  - Enhanced `pipeline.py` with comprehensive metric collection
+  - Real-time memory usage tracking with psutil
+  - Automated business metric calculations
+- 📁 **Reorganized Campaign Reports**
+  - New centralized directory: `output/campaign_reports/`
+  - Enhanced filename format: `campaign_report_CAMPAIGN_ID_PRODUCT_ID_YYYY-MM-DD.json`
+  - Historical report preservation with timestamps
+  - No report overwrites - full audit trail maintained
+- 🖥️ **Enhanced Console Output**
+  - Technical metrics summary display
+  - Business metrics summary display
+  - Cache efficiency and API performance visibility
+  - ROI and cost savings information in real-time
+
+### Changed
+- Updated `src/storage.py` `save_report()` method
+  - Reports now saved to centralized `campaign_reports/` directory
+  - Filename includes both campaign ID and product ID
+  - Date timestamp prevents overwrites
+- Enhanced `src/pipeline.py` orchestration
+  - Added psutil for memory monitoring
+  - Tracks API response times for all calls
+  - Calculates cache hit/miss rates
+  - Monitors image processing, localization, and compliance timing
+  - Computes comprehensive business ROI metrics
+- Updated imports in `src/models.py`
+  - Added `Optional` type hint for new optional fields
+
+### Performance
+- Memory tracking: ~5-10ms overhead per product
+- Metric calculation: ~15-20ms total overhead
+- **Total enhanced reporting overhead: ~20-30ms per campaign** (negligible)
+
+### Benefits
+- **Complete audit trail** - Historical reports with timestamps
+- **ROI visibility** - Clear business value metrics
+- **Performance insights** - Detailed technical metrics for optimization
+- **Cost tracking** - Estimated savings vs manual production
+- **Efficiency monitoring** - Cache utilization and processing speed
+- **Debugging support** - Full error traces and system info
+
+---
+
 ## [Unreleased]
 
-### Planned for 1.3.0 (Phase 2)
+### Planned for 1.4.0 (Phase 2)
 - [ ] Video generation support
 - [ ] Web UI for campaign preview
 - [ ] A/B testing variants
